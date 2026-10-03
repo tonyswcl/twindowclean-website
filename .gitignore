@@ -1,0 +1,22 @@
+# Never commit credentials or local state. The repo is public and served as the website.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*
+*token*
+service-account*.json
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+# Customer documents never go here.
+*-quote.html
+*-invoice.html
+*-agreement.html
+*-report.html
+*.pdf
+__pycache__/
