@@ -26,7 +26,7 @@
   <link href="assets/fonts.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <!-- tq:css -->
-<link href="assets/quote/quote.css?v=9ded4818fa" rel="stylesheet">
+<link href="assets/quote/quote.css?v=4d16126ab2" rel="stylesheet">
   <link rel="preload" as="image" href="assets/quote/home-4x5.webp" fetchpriority="high">
 <!-- /tq:css -->
 
@@ -462,8 +462,10 @@
         </div>
         <template data-tpl><div class="svc" data-body="pig">
           <h3>Pigeon proofing <small>$450+</small></h3>
-          <div class="note">$450 covers up to 12 panels. Each panel over 12 is +$50 for the mesh, labor and cleaning that panel. Rigid, rust resistant steel mesh, never chicken wire, held by clips that grip the lip of the panel frame. Nothing is drilled or screwed into your panels, so the manufacturer warranty stays intact. 2 to 3 spinners free, plus a solar wash and a soft wash of the roof around the panels. <button type="button" class="info" data-why aria-expanded="false" aria-label="Why clips and not screws">i</button></div>
+          <div class="note">$450 covers up to 12 panels on a single story home. A two story home adds $125. Each panel over 12 is +$50 for the mesh, labor and cleaning that panel. Rigid, rust resistant steel mesh, never chicken wire, held by clips that grip the lip of the panel frame. Nothing is drilled or screwed into your panels, so the manufacturer warranty stays intact. 2 to 3 spinners free, plus a solar wash and a soft wash of the roof around the panels. <button type="button" class="info" data-why aria-expanded="false" aria-label="Why clips and not screws">i</button></div>
           <p class="why" hidden>Cheaper crews screw or bolt mesh into the panel frame or the roof. Every hole is a spot for water and a reason for a solar company to deny a warranty claim. Our clips grip the inner lip of the frame, hold in High Desert wind, and come off clean if a panel ever needs service.</p>
+          <div class="opt stack" id="pigStory"><span>How many stories is the home? <small>A two story home adds $125 for the extra access and labor.</small></span><div class="seg2 three" data-pstory><button type="button" data-ps="1" aria-pressed="false">1 story</button><button type="button" data-ps="2" aria-pressed="false">2 story</button><button type="button" data-ps="0" aria-pressed="false">Not sure</button></div></div>
+          <p class="note" id="pigStoryNote">Pick one so the price is right. A two story home adds $125.</p>
           <div class="opt stack"><span>Your package</span><div class="seg2 mesh" data-seg="pkg"><button type="button" data-v="0" aria-pressed="true">Pigeon proofing<small id="pkgA">$450</small></button><button type="button" data-v="1" aria-pressed="false">+ a year of cleanings<small id="pkgB"></small></button></div></div>
           <p class="note" id="pkgNote"></p>
           <div class="opt"><span>Panels over 12 <b class="amt">+$50 each</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Why this price">i</button></span></div>
@@ -559,6 +561,7 @@
           <div class="opt" data-sec="1" hidden><span>Section 2</span><div class="stepper" data-step="arr1"><button type="button" data-d="-1" aria-label="Fewer panels in section 2">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="More panels in section 2">+</button></div></div>
           <div class="opt" data-sec="2" hidden><span>Section 3</span><div class="stepper" data-step="arr2"><button type="button" data-d="-1" aria-label="Fewer panels in section 3">−</button><output class="num">6</output><button type="button" data-d="1" aria-label="More panels in section 3">+</button></div></div>
         </div>
+        <div class="myhome" id="myHome" hidden></div>
         <div class="often" id="often" hidden></div>
       </div>
       <div class="card ticket" aria-live="polite">
@@ -1083,7 +1086,7 @@
 </nav>
 </div>
 <script>window.TQ={"svc":["win"],"mode":"home","city":"Phelan","street":"Phelan Rd, Phelan","tech":"9b123a2d04"};</script>
-<script src="assets/quote/quote.js?v=ef21b4cdea" defer></script>
+<script src="assets/quote/quote.js?v=96f6b4d64b" defer></script>
 <!-- /tq:tail -->
 </body>
 </html>

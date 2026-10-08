@@ -50,7 +50,7 @@
 
   <link href="style.css" rel="stylesheet">
   <!-- tq:css -->
-<link href="assets/quote/quote.css?v=9ded4818fa" rel="stylesheet">
+<link href="assets/quote/quote.css?v=4d16126ab2" rel="stylesheet">
   <link rel="preload" as="image" href="assets/quote/home-plain-4x5.webp" fetchpriority="high">
 <!-- /tq:css -->
 
@@ -399,8 +399,10 @@
         </div></template>
         <template data-tpl><div class="svc" data-body="pig">
           <h3>Control de palomas <small>$450+</small></h3>
-          <div class="note">$450 cubre hasta 12 paneles. Cada panel adicional es +$50 por la malla, la mano de obra y la limpieza de ese panel. Malla rígida de acero que no se oxida, nunca alambre de gallinero, sujeta con clips que se agarran del borde del marco del panel. No se perfora ni se atornilla nada en tus paneles, así que la garantía del fabricante queda intacta. 2 a 3 espantapájaros giratorios gratis, más lavado de paneles y del techo alrededor de los paneles. <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué clips y no tornillos">i</button></div>
+          <div class="note">$450 cubre hasta 12 paneles en una casa de un piso. Una casa de dos pisos suma $125. Cada panel adicional es +$50 por la malla, la mano de obra y la limpieza de ese panel. Malla rígida de acero que no se oxida, nunca alambre de gallinero, sujeta con clips que se agarran del borde del marco del panel. No se perfora ni se atornilla nada en tus paneles, así que la garantía del fabricante queda intacta. 2 a 3 espantapájaros giratorios gratis, más lavado de paneles y del techo alrededor de los paneles. <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué clips y no tornillos">i</button></div>
           <p class="why" hidden>Las cuadrillas baratas atornillan la malla al marco del panel o al techo. Cada hoyo es una entrada de agua y un motivo para que la compañía solar niegue la garantía. Nuestros clips se agarran del borde interior del marco, aguantan el viento del High Desert y se quitan limpio si un panel necesita servicio.</p>
+          <div class="opt stack" id="pigStory"><span>¿Cuántos pisos tiene la casa? <small>Una casa de dos pisos suma $125 por el acceso y la mano de obra extra.</small></span><div class="seg2 three" data-pstory><button type="button" data-ps="1" aria-pressed="false">1 piso</button><button type="button" data-ps="2" aria-pressed="false">2 pisos</button><button type="button" data-ps="0" aria-pressed="false">No sé</button></div></div>
+          <p class="note" id="pigStoryNote">Elige uno para que el precio sea correcto. Una casa de dos pisos suma $125.</p>
           <div class="opt stack"><span>Tu paquete</span><div class="seg2 mesh" data-seg="pkg"><button type="button" data-v="0" aria-pressed="true">Control de palomas<small id="pkgA">$450</small></button><button type="button" data-v="1" aria-pressed="false">+ un año de lavados<small id="pkgB"></small></button></div></div>
           <p class="note" id="pkgNote"></p>
           <div class="opt"><span>Paneles después de 12 <b class="amt">+$50 cada uno</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button></span></div>
@@ -420,7 +422,7 @@
           <button type="button" class="see3d open3d" data-mode="sol">Mira tus paneles limpiarse en 3D →</button>
         </div></template>
         <div class="svc" data-body="scr">
-          <h3>Mosquiteros <small>por mosquitero</small></h3>
+          <h3>Reparación de mosquiteros <small>por mosquitero</small></h3>
           <div class="opt stack"><span>Malla</span><div class="seg2 mesh" data-seg="pet"><button type="button" data-v="0" aria-pressed="false">Fibra de vidrio gris<small>$53.99</small></button><button type="button" data-v="1" aria-pressed="true">Todo clima<small>$64.99</small></button></div></div>
           <p class="note" data-mesh-fact="0">La misma clase de malla que usó el constructor, instalada y tensada bien. La vista más clara y buen paso de aire. Bien para ventanas con sombra.</p>
           <p class="note" data-mesh-fact="1">Poliéster recubierto de vinil, resistente al sol y al clima, hecho para estar afuera. Aguanta el sol del desierto, el viento y las mascotas mejor que la fibra de vidrio común.</p>
@@ -496,6 +498,7 @@
           <div class="opt" data-sec="1" hidden><span>Sección 2</span><div class="stepper" data-step="arr1"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 2">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 2">+</button></div></div>
           <div class="opt" data-sec="2" hidden><span>Sección 3</span><div class="stepper" data-step="arr2"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 3">−</button><output class="num">6</output><button type="button" data-d="1" aria-label="Más paneles en la sección 3">+</button></div></div>
         </div>
+        <div class="myhome" id="myHome" hidden></div>
         <div class="often" id="often" hidden></div>
       </div>
       <div class="card ticket" aria-live="polite">
@@ -942,7 +945,7 @@
 </nav>
 </div>
 <script>window.TQ={"svc":["scr"],"mode":"scr","lang":"es","tech":"9b123a2d04"};</script>
-<script src="assets/quote/quote.js?v=ef21b4cdea" defer></script>
+<script src="assets/quote/quote.js?v=96f6b4d64b" defer></script>
 <!-- /tq:tail -->
 </body>
 </html>
