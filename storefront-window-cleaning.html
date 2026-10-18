@@ -48,7 +48,7 @@
 
   <link href="style.css" rel="stylesheet">
   <!-- tq:css -->
-<link href="assets/quote/quote.css?v=d4f656fa07" rel="stylesheet">
+<link href="assets/quote/quote.css?v=760171bba6" rel="stylesheet">
   <link rel="preload" as="image" href="assets/quote/com-4x5.webp" fetchpriority="high">
 <!-- /tq:css -->
 
@@ -137,7 +137,7 @@
       "name": "How is it billed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "One invoice at the end of the month, card, check or transfer. Several locations go on one schedule and one invoice."
+        "text": "One invoice at the end of the month, paid by a QuickBooks payment link or Zelle. Several locations go on one schedule and one invoice."
       }
     },
     {
@@ -157,8 +157,8 @@
 {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "name": "Tony's Window Cleaning",
-  "alternateName": "Tonys Window Cleaning",
+  "name": "Tonys Window Cleaning",
+  "alternateName": "Tony's Window Cleaning",
   "image": "https://twindowclean.com/assets/logo.png",
   "telephone": "+1-714-559-0300",
   "email": "twindowclean@gmail.com",
@@ -255,7 +255,7 @@
       <a href="pigeon-proofing.html">Pigeon Proofing</a>
       <a href="pricing.html">Pricing</a>
       <a href="reviews.html">Reviews</a>
-      <a href="#quote" class="nav-cta">Free Quote</a>
+      <a href="#quote" class="nav-cta">Select your service</a>
     </nav>
     <a href="tel:7145590300" class="nav-phone" aria-label="Call Tony's Window Cleaning">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24c1.1.37 2.3.57 3.5.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.4.57 3.5a1 1 0 01-.24 1l-2.23 2.3z"/></svg>
@@ -285,10 +285,10 @@
         <span class="chip">Vinyl stickers <b>$10</b> each</span>
       </div>
       <div class="go">
-        <a class="qb qb-gold" href="#quote">Get my price</a>
+        <a class="qb qb-gold" href="#quote">Select your service</a>
         <button type="button" class="qb qb-ghost open3d" data-mode="tour">See it on my storefront</button>
       </div>
-      <p class="rate"><b>★★★★★</b> 5.0 on Google · Free inspection · Satisfaction guaranteed</p>
+      <p class="rate"><b class="stars" aria-hidden="true">★★★★★</b> 4.9 on Google · Free inspection · Satisfaction guaranteed</p>
 <!-- /tq:cta -->
     </div>
 <!-- tq:media -->
@@ -307,8 +307,7 @@
         <div class="lay car" data-lay="win" hidden>
           <div class="track">
             <figure><img src="assets/quote/win-after.jpg" alt="Sliding glass door, clear after cleaning" width="800" height="600" loading="lazy" decoding="async"><figcaption>Sliding door · clear glass</figcaption></figure>
-            <figure><img src="assets/photos/spring-valley-lake-window-02.jpg" alt="Arched window on a Spring Valley Lake home after cleaning" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Arched window · Spring Valley Lake</figcaption></figure>
-            <figure><img src="assets/photos/apple-valley-window-02.jpg" alt="Large picture window in Apple Valley after cleaning" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Picture window · Apple Valley</figcaption></figure>
+            <figure><img src="assets/photos/hesperia-window-01.jpg" alt="Clean sliding window on a Hesperia home" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Slider, glass and track · Hesperia</figcaption></figure>
           </div>
           <div class="dots" aria-hidden="true"></div>
           <div class="done show"><b>Screens, tracks and sills too.</b><span>$149 single story, $249 two story.</span></div>
@@ -326,7 +325,8 @@
   <span id="need"></span>
   <div class="wrap">
     <div id="shared" class="banner" hidden>You opened a shared quote. Change anything you like.</div>
-    <div class="step-head"><span class="step-n">1</span><h2>Tap what you need</h2></div>
+    <ol class="how" aria-label="How it works"><li aria-current="step"><b>1</b>Select your service</li><li><b>2</b>Tell us about your home</li><li><b>3</b>See your price</li><li><b>4</b>Request a day</li><li><b>5</b>Tony confirms by text</li></ol>
+    <div class="step-head"><span class="step-n">1</span><h2>Select your service</h2></div>
     <p class="step-sub">Pick one or more. These are real prices, and Tony confirms in writing before any work starts.</p>
     <div class="tiles" id="tiles">
       <button type="button" class="tile" data-svc="win" aria-pressed="false">
@@ -342,7 +342,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 8h16M4 13h16M9 3v18M15 3v18" stroke-width="1"/></svg>
         <b>Screens</b><span>Re-meshed on site from $53.99</span></button>
     </div>
-    <button type="button" class="more-svc" id="moreSvc" aria-expanded="false" aria-controls="xtiles"><b>Find our other services</b><span>Hard water, roof wash, new construction and more</span></button>
+    <button type="button" class="more-svc" id="moreSvc" aria-expanded="false" aria-controls="xtiles"><b>Find our other services</b><span>Pressure washing, hard water, roof wash, gutters, new construction and more</span></button>
     <div class="xtiles" id="xtiles" hidden>
       <button type="button" class="xtile" data-svc="hw" aria-pressed="false"><b>Hard water removal</b><span>from $12 a pane</span></button>
       <button type="button" class="xtile" data-svc="roof" aria-pressed="false"><b>Roof soft wash</b><span>whole roof from $599</span></button>
@@ -374,7 +374,7 @@
         </div></template>
         <template data-tpl><div class="svc" data-body="pig">
           <h3>Pigeon proofing <small>$450+</small></h3>
-          <div class="note">$450 covers up to 12 panels on a single story home. A two story home adds $125. Each panel over 12 is +$50 for the mesh, labor and cleaning that panel. Rigid, rust resistant steel mesh, never chicken wire, held by clips that grip the lip of the panel frame. Nothing is drilled or screwed into your panels, so the manufacturer warranty stays intact. 2 to 3 spinners free, plus a solar wash and a soft wash of the roof around the panels. <button type="button" class="info" data-why aria-expanded="false" aria-label="Why clips and not screws">i</button></div>
+          <div class="note">$450 covers up to 12 panels on a single story home. A two story home adds $125. Each panel over 12 is +$50 for the mesh, labor and cleaning that panel. Rigid, rust resistant steel mesh, never chicken wire, held by clips that grip the lip of the panel frame. Nothing is drilled or screwed into your panels, so the manufacturer warranty stays intact. 2 to 3 spinners free, plus a solar wash and cleanup of the droppings under and around the panels. <button type="button" class="info" data-why aria-expanded="false" aria-label="Why clips and not screws">i</button></div>
           <p class="why" hidden>Cheaper crews screw or bolt mesh into the panel frame or the roof. Every hole is a spot for water and a reason for a solar company to deny a warranty claim. Our clips grip the inner lip of the frame, hold in High Desert wind, and come off clean if a panel ever needs service.</p>
           <div class="opt stack" id="pigStory"><span>How many stories is the home? <small>A two story home adds $125 for the extra access and labor.</small></span><div class="seg2 three" data-pstory><button type="button" data-ps="1" aria-pressed="false">1 story</button><button type="button" data-ps="2" aria-pressed="false">2 story</button><button type="button" data-ps="0" aria-pressed="false">Not sure</button></div></div>
           <p class="note" id="pigStoryNote">Pick one so the price is right. A two story home adds $125.</p>
@@ -384,7 +384,7 @@
           <p class="why" hidden>$450 covers up to 12 panels. Each panel past that means more mesh, more clips, more cleanout under the array and one more panel to wash, so it's $50 a panel. Set your count in the panel box below.</p>
           <div class="opt"><span>Extra spinners <b class="amt">$50 each</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Why this price">i</button></span><div class="stepper" data-step="spin"><button type="button" data-d="-1" aria-label="Fewer spinners">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="More spinners">+</button></div></div>
           <p class="why" hidden>2 to 3 spinners come free. A spinner's flash covers the side of the roof it faces, and a ridge blocks it, so bigger roofs or roofs with birds on both sides usually need one more. Tap "See what the spinners do" to watch it in 3D.</p>
-          <p class="get"><b>What you get.</b> Birds out from under the panels, nests and droppings hauled away and the area sanitized so the smell goes too, panels and the roof around them cleaned, mesh clipped to the frame so nothing voids your panel warranty, and a lifetime workmanship warranty on the install, in writing.</p>
+          <p class="get"><b>What you get.</b> Birds out from under the panels, nests and droppings hauled away and the area sanitized so the smell goes too, panels washed, mesh clipped to the frame so nothing voids your panel warranty, and a lifetime workmanship warranty on the install, in writing.</p>
           <div class="note" id="pigTerms"><b>Warranty terms.</b> Lifetime workmanship warranty for the original customer. It does not transfer if the property is sold. If mesh or clips fail because of how we installed them, we repair or replace the affected mesh and clips at no charge. It does not cover storm damage or birds getting in through areas that were not originally protected, and removal or changes by anyone else void it for the whole installation. It is a warranty on the work, not a promise that birds never come back. The same terms are written in your quote PDF.</div>
           <p class="now"><b>Why now.</b> Nests only get bigger. The longer the birds stay, the more there is to clean out, and the more droppings sit on the roof and the wiring.</p>
           <button type="button" class="see3d open3d" data-mode="pig">See what the spinners do in 3D →</button>
@@ -392,7 +392,7 @@
         <template data-tpl><div class="svc" data-body="sol">
           <h3>Solar panel cleaning <small>$7 a panel</small></h3>
           <div class="note" id="solNote"></div>
-          <p class="get"><b>What you get.</b> Panels that make what they're rated for, and a look over the whole array for damage, loose wiring and birds while we're up there. $7 a panel, dried spot free.</p>
+          <p class="get"><b>What you get.</b> Clean panels, and if we notice anything visible while we're up there, like a cracked panel or birds moving in, we point it out. $7 a panel, dried spot free.</p>
           <p class="now"><b>Why now.</b> There's almost no rain up here to rinse panels, so the dust stacks up and your output drops a little more every month.</p>
           <button type="button" class="see3d open3d" data-mode="sol">See your panels cleaned in 3D →</button>
         </div></template>
@@ -419,7 +419,7 @@
         </div></template>
         <template data-tpl><div class="svc" data-body="roof">
           <h3>Roof soft wash <small>from $599</small></h3>
-          <div class="note">Part of our pressure washing. Low pressure soft wash of the whole roof, safe for tile and shingle, from $599 with the final price quoted for your roof. Pigeon proofing already includes a soft wash of the roof areas the birds used, under and around the panels.</div>
+          <div class="note">Part of our pressure washing. Low pressure soft wash of the whole roof, safe for tile and shingle, from $599 with the final price quoted for your roof. Pigeon proofing includes cleaning up the droppings and sanitizing the affected areas under and around the panels. A whole roof wash is a separate service.</div>
         </div></template>
         <template data-tpl><div class="svc" data-body="pc">
           <h3>New construction clean <small>from $249</small></h3>
@@ -480,9 +480,10 @@
         <div id="tlines"></div>
         <div class="ttotal"><span>Total</span><b id="ttotal" class="num">$149</b></div>
         <p class="from-note" id="fromNote" hidden>Specialty work is a starting price. Tony confirms it in writing before he starts.</p>
+        <p class="from-note" id="farNote" hidden></p>
         <p class="proof" id="proof" hidden></p>
         <div class="guar"><span aria-hidden="true">✓</span><span><b>Satisfaction guaranteed.</b> If anything isn't right, we redo it before we leave.</span></div>
-        <ul class="trust"><li>Free inspection</li><li>No trip fee</li><li>Card, cash or check</li></ul>
+        <ul class="trust"><li>Free inspection</li><li>No trip fee</li><li>Payment link or Zelle</li></ul>
         <a class="qb qb-gold" id="dayGo" href="#day" style="width:100%;margin-top:14px">Pick a day, save 10% →</a>
         <button type="button" class="qreset" id="resetQ">Start over</button>
       </div>
@@ -522,7 +523,7 @@
       <div class="reasons">
         <p><b>Your price is set.</b> It's right above, and it doesn't change on the day.</p>
         <p><b>Tony confirms by text.</b> He brings everything, works around your day, and you don't lift a finger.</p>
-        <p><b>Nothing to pay now.</b> Card, cash or check once the work is done and you've looked it over.</p>
+        <p><b>Nothing to pay now.</b> Pay by a QuickBooks payment link or Zelle once the work is done and you've looked it over.</p>
       </div>
       <div id="waitWrap">
         <div class="lab" style="margin-top:14px">What happens if you wait</div>
@@ -695,7 +696,7 @@
       <h2>Glass that <span class="grad">opens the door</span></h2>
       <p>Set your panes and schedule above. The price is flat and firm.</p>
       <div class="hero-actions center">
-        <a href="#quote" class="btn btn-primary">Get my price</a>
+        <a href="#quote" class="btn btn-primary">Select your service</a>
         <a href="tel:7145590300" class="btn btn-ghost light">Call 714-559-0300</a>
       </div>
     </div>
@@ -722,7 +723,7 @@
         </details>
         <details class="faq-item">
           <summary>How is it billed?</summary>
-          <p>One invoice at the end of the month, card, check or transfer. Several locations go on one schedule and one invoice.</p>
+          <p>One invoice at the end of the month, paid by a QuickBooks payment link or Zelle. Several locations go on one schedule and one invoice.</p>
         </details>
         <details class="faq-item">
           <summary>Are you insured?</summary>
@@ -785,6 +786,8 @@
         <a href="mountain-communities.html">Mountain communities</a>
         <a href="pigeon-proofing-fontana.html">Fontana</a>
         <a href="pigeon-proofing-rancho-cucamonga.html">Rancho Cucamonga</a>
+        <a href="antelope-valley.html">Antelope Valley</a>
+        <a href="morongo-basin.html">Morongo Basin</a>
         <a href="service-areas.html">All service areas</a>
       </div>
       <div class="footer-col">
@@ -937,17 +940,17 @@
     </div>
     </template>
     <div class="osum" id="osum"></div>
-    <a class="qb qb-gold ov-cta" href="#quote" id="ovCta">See my price</a>
+    <a class="qb qb-gold ov-cta" href="#quote" id="ovCta">Select your service</a>
   </div>
 </div>
 <nav class="dock" aria-label="Quick actions">
-  <a class="qb p" href="#quote"><span id="dockTotal" class="num">$149</span><small>my price</small></a>
+  <a class="qb p" href="#quote"><span class="lbl">Select service</span><small><b id="dockTotal" class="num">$149</b> my price</small></a>
   <a class="qb qb-gold" href="#tq-send">Text</a>
   <a class="qb qb-ghost" href="tel:7145590300">Call</a>
 </nav>
 </div>
 <script>window.TQ={"svc":["com"],"mode":"com","tech":"9b123a2d04"};</script>
-<script src="assets/quote/quote.js?v=d72093a0ac" defer></script>
+<script src="assets/quote/quote.js?v=af702d5bf7" defer></script>
 <!-- /tq:tail -->
 </body>
 </html>

@@ -87,12 +87,13 @@
   if (counters.length) {
     const animate = (el) => {
       const target = parseFloat(el.dataset.count);
+      const dec = (el.dataset.count.split('.')[1] || '').length;
       const dur = 1400;
       const start = performance.now();
       const step = (now) => {
         const p = Math.min((now - start) / dur, 1);
         const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(target * eased).toString();
+        el.textContent = (target * eased).toFixed(dec);
         if (p < 1) requestAnimationFrame(step);
       };
       requestAnimationFrame(step);
