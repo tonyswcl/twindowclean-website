@@ -286,6 +286,8 @@
   "logo": "https://twindowclean.com/assets/logo.png"
 }
 </script>
+  <link href="assets/growth/growth.css?v=20261029" rel="stylesheet">
+  <link href="assets/growth02/portfolio.css?v=growth02" rel="stylesheet">
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -321,7 +323,7 @@
 
   <!-- ===== HERO ===== -->
   <div class="tq">
-<section class="tq-hero" id="tq-top">
+<section class="tq-hero growth-service" id="tq-top">
   <div class="wrap">
     <div class="tq-intro">
       <p class="crumbs"><a href="/">Home</a><span>/</span>Window Cleaning</p>
@@ -344,7 +346,8 @@
 <!-- /tq:cta -->
     </div>
 <!-- tq:media -->
-    <div class="wipe-col">
+<aside class="growth-proof" aria-label="Tony’s project photographs"><figure class=""><img src="assets/growth02/residential-window-reflections-750.webp" srcset="assets/growth02/residential-window-reflections-375.webp 375w, assets/growth02/residential-window-reflections-750.webp 750w, assets/growth02/residential-window-reflections-1200.webp 1200w" sizes="(max-width: 700px) 90vw, 390px" alt="Reflective residential windows beside a curved paved walkway." width="750" height="1000" fetchpriority="high" decoding="async"><figcaption>Residential window glass</figcaption></figure><figure class="growth-screen"><img src="assets/growth/arched-window-cleaning-750.webp" srcset="assets/growth/arched-window-cleaning-375.webp 375w, assets/growth/arched-window-cleaning-750.webp 750w" sizes="(max-width: 700px) 36vw, 180px" alt="Tall arched windows from Tony’s existing project gallery" width="750" height="1000" loading="eager" decoding="async"><figcaption>Arched glass from our existing portfolio</figcaption></figure><p class="growth-links"><a href="#quote">Request a window estimate</a> · <a href="gallery.html">See more of our work</a></p></aside>
+    <div class="wipe-col" hidden>
       <div class="modes" id="modes" role="group" aria-label="What to show">
         <button type="button" data-m="r3d" aria-pressed="true">3D home</button>
         <button type="button" data-m="win" aria-pressed="false">Windows</button>
@@ -352,14 +355,14 @@
       </div>
       <div class="wipe" id="wipe">
         <div class="lay r3d open3d" data-mode="tour" data-lay="r3d" role="button" tabindex="0" aria-label="Open the 3D preview of your home">
-          <img class="r3d-poster" id="r3dPoster" src="assets/quote/home-plain-4x5.webp" alt="3D model of a High Desert home with clean windows and washed solar panels" width="800" height="1000" fetchpriority="high" decoding="async">
+          <img class="r3d-poster" id="r3dPoster" src="assets/quote/home-plain-4x5.webp" alt="3D model of a High Desert home with clean windows and washed solar panels" width="800" height="1000" fetchpriority="low" loading="lazy" decoding="async">
           <div class="h3host" id="h3host"></div>
           <div class="callout" id="hcall" hidden><i></i><span></span></div>
           <span class="r3d-go">See it on my home</span>
         </div>
         <div class="lay car" data-lay="win" hidden>
           <div class="track">
-            <figure><img src="assets/quote/win-after.jpg" alt="Sliding glass door, clear after cleaning" width="800" height="600" loading="lazy" decoding="async"><figcaption>Sliding door · clear glass</figcaption></figure>
+            <figure><img src="assets/quote/win-after.jpg" alt="Sliding glass door, clear after cleaning" width="800" height="600" loading="eager" decoding="async"><figcaption>Sliding door · clear glass</figcaption></figure>
             <figure><img src="assets/photos/hesperia-window-04.jpg" alt="Octagon window on a Hesperia home, clean glass and frame" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Octagon window · Hesperia</figcaption></figure>
             <figure><img src="assets/photos/spring-valley-lake-window-03.jpg" alt="Squeegeeing a second story window from a ladder in Spring Valley Lake" width="563" height="1000" loading="lazy" decoding="async"><figcaption>Upstairs glass from the ladder · Spring Valley Lake</figcaption></figure>
           </div>
@@ -387,15 +390,8 @@
   <div class="wrap">
     <span class="where">Real work</span>
     <h2>Interested in seeing window cleaning we've done?</h2>
-    <p class="work-lead">Photos from our own jobs, with the town on each one we know. Tap one to see it bigger.</p>
-    <ul class="work-strip" data-n="6">
-      <li><a href="assets/photos/apple-valley-window-02.jpg" data-work><img src="assets/photos/t/apple-valley-window-02.webp" alt="Large corner picture window in Apple Valley after cleaning, desert view behind it" width="360" height="480" loading="lazy" decoding="async"></a><span>Apple Valley · Corner picture window</span></li>
-      <li><a href="assets/photos/apple-valley-window-03.jpg" data-work><img src="assets/photos/t/apple-valley-window-03.webp" alt="Water fed pole washing a second story window in Apple Valley" width="360" height="480" loading="lazy" decoding="async"></a><span>Apple Valley · Second story, water fed pole</span></li>
-      <li><a href="assets/photos/hesperia-tony-window-02.jpg" data-work><img src="assets/photos/t/hesperia-tony-window-02.webp" alt="Tony squeegeeing a large picture window at a Hesperia home" width="360" height="450" loading="lazy" decoding="async"></a><span>Hesperia · Tony on the squeegee</span></li>
-      <li><a href="assets/photos/hesperia-window-03.jpg" data-work><img src="assets/photos/t/hesperia-window-03.webp" alt="Tall grid windows on a Hesperia home after cleaning" width="360" height="480" loading="lazy" decoding="async"></a><span>Hesperia · Grid windows</span></li>
-      <li><a href="assets/photos/oak-hills-window-02.jpg" data-work><img src="assets/photos/t/oak-hills-window-02.webp" alt="View out through a clean grid window from inside an Oak Hills home" width="360" height="480" loading="lazy" decoding="async"></a><span>Oak Hills · Looking out, inside done</span></li>
-      <li><a href="assets/photos/hesperia-window-01.jpg" data-work><img src="assets/photos/t/hesperia-window-01.webp" alt="Clean sliding window on a Hesperia home" width="360" height="480" loading="lazy" decoding="async"></a><span>Hesperia · Slider, glass and track</span></li>
-    </ul>
+    <p class="work-lead">A small selection from our project library. Tap a photograph for a closer look.</p>
+    <ul class="work-strip" data-n="3"><li><a href="assets/growth02/residential-window-reflections-1200.webp" data-work><img src="assets/growth02/residential-window-reflections-750.webp" srcset="assets/growth02/residential-window-reflections-375.webp 375w, assets/growth02/residential-window-reflections-750.webp 750w, assets/growth02/residential-window-reflections-1200.webp 1200w" sizes="(max-width: 700px) 70vw, 240px" alt="Reflective residential windows beside a curved paved walkway." width="750" height="1000" loading="lazy" decoding="async"></a><span>Residential glass</span></li><li><a href="assets/growth02/black-framed-window-reflections-1200.webp" data-work><img src="assets/growth02/black-framed-window-reflections-750.webp" srcset="assets/growth02/black-framed-window-reflections-375.webp 375w, assets/growth02/black-framed-window-reflections-750.webp 750w, assets/growth02/black-framed-window-reflections-1200.webp 1200w" sizes="(max-width: 700px) 70vw, 240px" alt="Tall trees reflected in black-framed window glass." width="750" height="842" loading="lazy" decoding="async"></a><span>Window reflections</span></li><li><a href="assets/growth02/custom-courtyard-glass-1200.webp" data-work><img src="assets/growth02/custom-courtyard-glass-750.webp" srcset="assets/growth02/custom-courtyard-glass-375.webp 375w, assets/growth02/custom-courtyard-glass-750.webp 750w, assets/growth02/custom-courtyard-glass-1200.webp 1200w" sizes="(max-width: 700px) 70vw, 240px" alt="Full-height glass beside a wood-lined courtyard overhang." width="750" height="1000" loading="lazy" decoding="async"></a><span>Custom courtyard glass</span></li></ul>
     <p class="work-next">Like what you see? <a href="#quote">Build your project below.</a></p>
   </div>
 </section>
@@ -757,28 +753,7 @@
       </div>
 
       <!-- PHOTOS: hub-window -->
-      <div class="photo-grid reveal">
-        <figure class="photo-card">
-          <img src="assets/photos/hub-window-01.jpg" alt="Clean streak-free sliding window after exterior cleaning" loading="lazy" decoding="async" width="750" height="1000">
-          <figcaption>Glass, frame and track, detailed clean</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/hub-window-02.jpg" alt="Row of clean exterior windows on a stucco two-story home after service" loading="lazy" decoding="async" width="750" height="1000">
-          <figcaption>The whole elevation, streak-free</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/hub-window-03.jpg" alt="Tall arched specialty windows cleaned on a custom two-story home" loading="lazy" decoding="async" width="750" height="1000">
-          <figcaption>Two-story and specialty glass</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/spring-valley-lake-window-01.jpg" alt="Two story stucco home in Spring Valley Lake with tall arched windows, technician on a ladder cleaning the upper glass" loading="lazy" decoding="async" width="750" height="1000">
-          <figcaption>Spring Valley Lake · two story, every pane top to bottom</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/spring-valley-lake-window-03.jpg" alt="Technician in a Tony's Window Cleaning shirt squeegeeing a second story window from a ladder in Spring Valley Lake" loading="lazy" decoding="async" width="563" height="1000">
-          <figcaption>Spring Valley Lake · second story glass mid clean</figcaption>
-        </figure>
-      </div>
+      <div class="g02-grid"><figure class=""><img src="assets/growth02/residential-window-reflections-750.webp" srcset="assets/growth02/residential-window-reflections-375.webp 375w, assets/growth02/residential-window-reflections-750.webp 750w, assets/growth02/residential-window-reflections-1200.webp 1200w" sizes="(max-width: 700px) 90vw, 390px" alt="Reflective residential windows beside a curved paved walkway." width="750" height="1000" loading="lazy" decoding="async"><figcaption>Residential windows</figcaption></figure><figure class=""><img src="assets/growth02/custom-courtyard-glass-750.webp" srcset="assets/growth02/custom-courtyard-glass-375.webp 375w, assets/growth02/custom-courtyard-glass-750.webp 750w, assets/growth02/custom-courtyard-glass-1200.webp 1200w" sizes="(max-width: 700px) 90vw, 390px" alt="Full-height glass beside a wood-lined courtyard overhang." width="750" height="1000" loading="lazy" decoding="async"><figcaption>Full-height courtyard glass</figcaption></figure><figure><img src="assets/growth/arched-window-cleaning-750.webp" alt="Tall arched windows from Tony’s existing project gallery" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Arched glass from our existing portfolio</figcaption></figure></div>
 
       <div class="section-head reveal" style="margin-top:2rem;margin-bottom:0">
         <p class="lead center">Priced on their own, and only if you ask: inside glass for the whole house, a flat $49 · more than 12 windows on a single story or 20 on a two story, a flat $39 · hard water restoration from $12 a pane after a free test pane · torn screens re-meshed from $53.99 · french doors or unusually high glass, a written price first. If we spot hard water, a torn screen or a failing seal, you hear about it with a price, and nothing beyond the quote happens without your yes.</p>
@@ -1221,7 +1196,7 @@
   <a class="qb qb-ghost" href="tel:7145590300">Call</a>
 </nav>
 </div>
-<script>window.TQ={"svc":["win"],"mode":"win","tech":"9b123a2d04"};</script>
+<script>window.TQ={"svc":["win"],"mode":"win","optional3d":true,"tech":"9b123a2d04"};</script>
 <script src="assets/quote/quote.js?v=83c06b86e6" defer></script>
 <!-- /tq:tail -->
 </body>
