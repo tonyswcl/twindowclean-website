@@ -1,0 +1,15 @@
+/* Homepage-only proof photos. Uses the existing approved colors and fonts. */
+.growth-proof {position:relative; min-width:0; padding:0 28px 10px 0; align-self:center;}
+.growth-proof figure {margin:0;}
+.growth-proof > figure:first-child {width:78%;}
+.growth-proof picture,.growth-proof img {display:block;width:100%;}
+.growth-proof img {height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:20px;box-shadow:0 10px 30px #10305020;}
+.growth-proof figcaption {font-size:12px;line-height:1.5;margin-top:8px;color:#36546b;}
+.growth-proof .growth-screen {position:absolute;width:40%;right:0;bottom:66px;background:#fff;padding:7px;border-radius:16px;box-shadow:0 8px 24px #10305018;}
+.growth-proof .growth-screen img {border-radius:10px;}
+.growth-proof .growth-screen figcaption {padding:0 4px 3px;}
+.growth-links {font-size:13px;line-height:1.7;margin-top:16px;}
+.tq-hero .go a {min-height:48px;}
+@media(max-width:899px) {#tq-top.tq-home .tq-intro,#tq-top.growth-service .tq-intro{display:block;order:0}#tq-top.tq-home .growth-proof,#tq-top.growth-service .growth-proof{order:1;margin-top:24px}}
+@media(max-width:700px) {.growth-proof{width:min(100%,440px);margin:20px auto 0;padding-right:22px}.growth-proof > figure:first-child{width:78%}.growth-proof .growth-screen{bottom:62px}.tq-hero .go{flex-wrap:wrap}.tq-hero .go a{justify-content:center;}}
+@media(prefers-reduced-motion:reduce) {.growth-proof *{animation:none!important;transition:none!important;}}
