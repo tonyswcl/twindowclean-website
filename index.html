@@ -238,10 +238,10 @@
       },
       {
         "@type": "Question",
-        "name": "How does the Interactive 3D Quote Builder work?",
+        "name": "Can I book just one service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pick your property and services, see the work done on a model like yours in 3D, and build a clearer estimate before you send your request."
+          "text": "Yes. Window cleaning, mobile screen repair and replacement, solar panel cleaning and pigeon-proofing can each be quoted separately. Choose the relevant service page or select the work you need in the estimate tool. Tony confirms scope, access and scheduling before booking."
         }
       },
       {
@@ -416,8 +416,9 @@
 }
 </script>
   <link href="assets/growth02/portfolio.css?v=growth02" rel="stylesheet">
+  <link rel="stylesheet" href="assets/growth02/closeout.css?v=growth02-final">
 </head>
-<body>
+<body class="growth-closeout-home">
   <!-- Scroll progress bar -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -457,7 +458,7 @@
     <div class="tq-intro">
       <span class="where">Locally owned in the High Desert</span>
       <h1>Professional Window Cleaning &amp; <span class="grad">Mobile Screen Services</span></h1>
-      <p class="tagline">Windows, screens, solar cleaning and pigeon protection.</p>
+      <p class="tagline"><a href="window-cleaning.html">Window cleaning</a>, <a href="screen-repair.html">mobile screens</a>, <a href="solar-panel-cleaning.html">solar cleaning</a> and <a href="pigeon-proofing.html">pigeon protection</a>.</p>
       <p class="lede">Serving Victorville, Hesperia, Apple Valley and nearby High Desert communities. Tell us what your property needs, review service options and request a preferred date. Inland Empire visits are available by arrangement.</p>
 <!-- tq:cta -->
       <div class="chips">
@@ -516,7 +517,7 @@
           </div>
           <div class="dots" aria-hidden="true"></div>
           <div class="done show"><b>$450 up to 12 panels.</b><span>Cleaned out, mesh clipped on, 2 to 3 spinners free.</span></div>
-          <button type="button" class="qb qb-gold qb-sm open3d cmp-3d" data-mode="pig">See it in 3D</button>
+
         </div>
         <span class="lbl" id="wlbl">Live 3D</span>
       </div>
@@ -527,6 +528,7 @@
 </section>
 <!-- tq:steps -->
 <!-- REAL WORK: photos from real jobs, between the 3D and the quote -->
+<section class="g02-pillars" aria-labelledby="g02-pillars-title"><div class="wrap"><h2 id="g02-pillars-title">Choose the service you need</h2><p>Professional work, clear pricing and service arranged around your property.</p><div class="g02-choices"><a href="window-cleaning.html"><h3>Window cleaning</h3><p>Residential glass, custom homes and oversized panes.</p><span>Explore window cleaning →</span></a><a href="screen-repair.html"><h3>Mobile screen repair &amp; replacement</h3><p>Re-meshing, replacement frames and sliding screen-door options.</p><span>Explore screen services →</span></a><a href="solar-panel-cleaning.html"><h3>Solar panel cleaning</h3><p>Purified water and a soft brush, with access and scope reviewed.</p><span>Explore solar cleaning →</span></a><a href="pigeon-proofing.html"><h3>Solar panel pigeon-proofing</h3><p>Fitted exclusion mesh, affected-area cleanup and the included panel wash.</p><span>Explore pigeon protection →</span></a></div></div></section>
 <section class="tq-work" id="work" data-work-svc="mix" data-local="0">
   <div class="wrap">
     <span class="where">Real work</span>
@@ -587,7 +589,7 @@
           <p class="why" hidden>Big custom homes vary a lot. Extra panes and screens are counted on site or from a satellite view, and inside and out can run $499 to $599 on some homes. You get the exact price from Tony before anything starts, so there are no surprises on the day.</p>
           <p class="get"><b>What you get.</b> More light in every room, a clear view, screens and tracks that slide the way they should, and glass that lasts because hard water never gets the chance to etch it.</p>
           <p class="now"><b>Why now.</b> Dust and sprinkler overspray build up fast up here. A cleaning every 3 to 6 months keeps hard water from setting into the glass.</p>
-          <button type="button" class="see3d open3d" data-mode="win">Watch a window get cleaned in 3D →</button>
+
         </div>
         <template data-tpl><div class="svc" data-body="pig">
           <h3>Pigeon proofing <small>$450+</small></h3>
@@ -604,14 +606,14 @@
           <p class="get"><b>What you get.</b> Birds out from under the panels, nests and droppings hauled away and the area sanitized so the smell goes too, panels washed, mesh clipped to the frame so nothing voids your panel warranty, and a lifetime workmanship warranty on the install, in writing.</p>
           <div class="note" id="pigTerms"><b>Warranty terms.</b> Lifetime workmanship warranty for the original customer. It does not transfer if the property is sold. If mesh or clips fail because of how we installed them, we repair or replace the affected mesh and clips at no charge. It does not cover storm damage or birds getting in through areas that were not originally protected, and removal or changes by anyone else void it for the whole installation. It is a warranty on the work, not a promise that birds never come back. The same terms are written in your quote PDF.</div>
           <p class="now"><b>Why now.</b> Nests only get bigger. The longer the birds stay, the more there is to clean out, and the more droppings sit on the roof and the wiring.</p>
-          <button type="button" class="see3d open3d" data-mode="pig">See what the spinners do in 3D →</button>
+
         </div></template>
         <template data-tpl><div class="svc" data-body="sol">
           <h3>Solar panel cleaning <small>$7 a panel</small></h3>
           <div class="note" id="solNote"></div>
           <p class="get"><b>What you get.</b> Clean panels, and if we notice anything visible while we're up there, like a cracked panel or birds moving in, we point it out. $7 a panel, dried spot free.</p>
           <p class="now"><b>Why now.</b> There's almost no rain up here to rinse panels, so the dust stacks up and your output drops a little more every month.</p>
-          <button type="button" class="see3d open3d" data-mode="sol">See your panels cleaned in 3D →</button>
+
         </div></template>
         <template data-tpl><div class="svc" data-body="scr">
           <h3>Window screen repair <small>per screen</small></h3>
@@ -626,7 +628,7 @@
           <div class="note" id="comboNote" hidden></div>
           <p class="get"><b>What you get.</b> Air in and bugs out, a clearer view from inside, screens that pop in and out easily, and a 2 year warranty on the mesh.</p>
           <p class="now"><b>Why now.</b> UV runs about nine months a year up here. Builder mesh goes brittle, then the wind finishes it off.</p>
-          <button type="button" class="see3d open3d" data-mode="scr">Compare the mesh in 3D →</button>
+
         </div></template>
         <template data-tpl><div class="svc" data-body="hw">
           <h3>Hard water removal <small>from $12 a pane</small></h3>
@@ -681,7 +683,7 @@
             <div class="opt"><span class="l"><b>Panes</b><small>Count one side and multiply, close is fine</small></span><div class="stepper" data-step="bwin"><button type="button" data-d="-4" aria-label="Fewer windows">−</button><output class="num">48</output><button type="button" data-d="4" aria-label="More windows">+</button></div></div>
             <div class="note" id="bldgNote">$10 a pane inside and out on the ground floor, $10 more a pane for each story up. We check every pane for hard water staining and work around existing tint. Free walkthrough, firm price in writing.</div>
           </div>
-          <div class="note"><a href="commercial-window-cleaning.html">See storefront plans →</a> · <button type="button" class="linkish open3d" data-mode="com">See it in 3D</button></div>
+          <div class="note"><a href="commercial-window-cleaning.html">See storefront plans →</a> · </div>
         </div></template>
         <div class="svc" id="panelRow">
           <div class="opt"><span class="l"><b>Solar panels on your roof</b><small>Count them from the street, close is fine</small></span><div class="stepper" data-step="panels"><button type="button" data-d="-1" aria-label="Fewer panels">−</button><output class="num">16</output><button type="button" data-d="1" aria-label="More panels">+</button></div><b class="ptotal num" hidden></b></div>
@@ -818,32 +820,6 @@
 </section>
 
 <!-- 3D -->
-<section class="tq-step" id="three">
-  <div class="wrap">
-    <div class="sec-h"><h2>See it on your home in 3D</h2><p>Pick your home. Watch the job get done.</p></div>
-    <div class="t3grid">
-      <div class="p3">
-        <button type="button" class="p3-img open3d" data-mode="tour" aria-label="Open the 3D preview"><img src="assets/quote/home-16x10.webp" alt="3D model of a High Desert home with clean windows, washed solar panels and pigeon mesh" width="960" height="600" loading="lazy" decoding="async"><span class="r3d-go">Open the 3D preview</span></button>
-        <div class="p3-btns">
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="win">Windows</button>
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="sol">Solar</button>
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="scr">Screens</button>
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="pig">Pigeons</button>
-        </div>
-        <p class="p3-s">Older home, manufactured home or a big custom home? Pick the closest style and see the job on a home like yours.</p>
-      </div>
-      <div class="card sci">
-        <h3>What you're looking at</h3>
-        <ul class="ticks">
-          <li><b>Windows</b> cleaned with purified water, screens, tracks and sills included.</li>
-          <li><b>Solar panels</b> washed streak free, $7 a panel.</li>
-          <li><b>Pigeon mesh</b> clipped to the panel frame, never bolted, with free spinners on the vents.</li>
-          <li><b>Screens</b> re-meshed in charcoal fiberglass or all weather, with service arrangements confirmed for your job.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- /tq:steps -->
 </div>
 
@@ -1090,7 +1066,7 @@
     <div class="container">
       <div class="section-head reveal">
         <span class="kicker">Recent work</span>
-        <h2 class="section-title">This week in Spring Valley Lake</h2>
+        <h2 class="section-title">From our project portfolio</h2>
         <p class="lead center">Two story home, tall arched glass, mineral on the lower panes, screen re-meshing. <a href="spring-valley-lake.html" style="font-weight:700">The lake has its own page →</a></p>
       </div>
       <div class="photo-grid reveal">
@@ -1194,8 +1170,8 @@
           <p>Absolutely. From storefronts to offices and recurring service, contact us for a custom quote tailored to your property.</p>
         </details>
         <details class="reveal">
-          <summary>How does the Interactive 3D Quote Builder work?</summary>
-          <p>Pick your property and services, see the work done on a model like yours in 3D, and build a clearer estimate before you send your request.</p>
+          <summary>Can I book just one service?</summary>
+          <p>Yes. Window cleaning, mobile screen repair and replacement, solar panel cleaning and pigeon-proofing can each be quoted separately. Choose the relevant service page or select the work you need in the estimate tool. Tony confirms scope, access and scheduling before booking.</p>
         </details>
         <details class="reveal">
           <summary>How do I book?</summary>

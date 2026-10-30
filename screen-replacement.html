@@ -135,7 +135,7 @@
       "name": "Do you do this at my house or take them away?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At your house, the same visit. We carry frame stock, corners, spline and both meshes on the truck, so nothing leaves and nothing comes back a week later."
+        "text": "We confirm whether your screens will be handled on site or collected for return and reinstallation. Your written quote states the arrangement and expected turnaround."
       }
     },
     {
@@ -264,6 +264,8 @@
   "logo": "https://twindowclean.com/assets/logo.png"
 }
 </script>
+  <link rel="stylesheet" href="assets/growth/growth.css?v=20261029">
+  <link rel="stylesheet" href="assets/growth02/closeout.css?v=growth02-final">
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -293,14 +295,14 @@
 
   <main id="main">
   <div class="tq">
-<section class="tq-hero" id="tq-top">
+<section class="tq-hero growth-service" id="tq-top">
   <div class="wrap">
     <div class="tq-intro">
       <p class="crumbs"><a href="/">Home</a><span>/</span><a href="screen-repair.html">Window Screen Repair</a><span>/</span>Window Screen Replacement</p>
       <span class="where">Serving Hesperia and the High Desert</span>
       <h1>Window Screen <span class="grad">Replacement</span></h1>
-      <p class="tagline">A whole new screen, frame and mesh, built on site from $63.99. Same visit, 2 year warranty on the mesh.</p>
-      <p class="lede">When the frame is bent, the corners are gone or the screen has been missing since the last windstorm, re-meshing is not enough. We build a new one to your window's exact size at the truck, set the spline, and it snaps in before we leave.</p>
+      <p class="tagline">Frame and mesh replacement from $63.99. Service arrangements and turnaround are confirmed in your quote.</p>
+      <p class="lede">When the frame is bent, the corners are gone or the screen has been missing since the last windstorm, re-meshing is not enough. We quote a new frame and mesh fitted to the opening after checking its dimensions, condition and access.</p>
 <!-- tq:cta -->
       <div class="chips">
         <span class="chip">Charcoal fiberglass <b>$53.99</b></span>
@@ -310,13 +312,14 @@
       </div>
       <div class="go">
         <a class="qb qb-gold" href="#quote">Select your service</a>
-        <button type="button" class="qb qb-ghost open3d" data-mode="tour">See it on my home</button>
+        <a class="qb qb-ghost" href="tel:7145590300">Call 714-559-0300</a>
       </div>
-      <p class="rate"><b class="stars" aria-hidden="true">★★★★★</b> 4.9 on Google · Free inspection · Satisfaction guaranteed</p>
+      <p class="rate"><a href="https://g.page/r/CWQH1O3JGKh4EAE">Read our Google reviews</a> · Free inspection · Satisfaction guaranteed</p>
 <!-- /tq:cta -->
     </div>
 <!-- tq:media -->
-    <div class="wipe-col">
+    <aside class="growth-proof growth-single" aria-label="Project photograph"><figure><img src="assets/growth02/installed-window-screen-750.webp" srcset="assets/growth02/installed-window-screen-375.webp 375w, assets/growth02/installed-window-screen-750.webp 750w, assets/growth02/installed-window-screen-1200.webp 1200w" sizes="(max-width:700px) 88vw, 420px" alt="Installed dark window screen in a white frame on wood siding." width="750" height="1000" fetchpriority="high" decoding="async"><figcaption>Installed screen and frame detail</figcaption></figure><p class="growth-links"><a href="#quote">Request a screen estimate</a></p></aside>
+    <div class="wipe-col" hidden>
       <div class="modes" id="modes" role="group" aria-label="What to show">
         <button type="button" data-m="r3d" aria-pressed="true">3D home</button>
         <button type="button" data-m="scr" aria-pressed="false">Screens</button>
@@ -324,7 +327,7 @@
       </div>
       <div class="wipe" id="wipe">
         <div class="lay r3d open3d" data-mode="tour" data-lay="r3d" role="button" tabindex="0" aria-label="Open the 3D preview of your home">
-          <img class="r3d-poster" id="r3dPoster" src="assets/quote/home-plain-4x5.webp" alt="3D model of a High Desert home with clean windows and washed solar panels" width="800" height="1000" fetchpriority="high" decoding="async">
+          <img class="r3d-poster" id="r3dPoster" src="assets/quote/home-plain-4x5.webp" alt="3D model of a High Desert home with clean windows and washed solar panels" width="800" height="1000" fetchpriority="low" loading="lazy" decoding="async">
           <div class="h3host" id="h3host"></div>
           <div class="callout" id="hcall" hidden><i></i><span></span></div>
           <span class="r3d-go">See it on my home</span>
@@ -336,7 +339,7 @@
             <figure><img src="assets/photos/hub-screen-repair-01.jpg" alt="Sliding door screen with fresh mesh after on site re-meshing" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Sliding door screen</figcaption></figure>
           </div>
           <div class="dots" aria-hidden="true"></div>
-          <div class="done show"><b>From $53.99 a screen.</b><span>Re-meshed on site, same visit. New frames $10 more.</span></div>
+          <div class="done show"><b>From $53.99 a screen.</b><span>Mobile service; on-site work or pickup, return and reinstallation are confirmed for your job. New frames $10 more.</span></div>
         </div>
         <div class="lay car" data-lay="win" hidden>
           <div class="track">
@@ -454,7 +457,7 @@
           <div class="opt"><span>Sliding screen doors <small id="doorNote">About twice a window screen. An estimate until Tony sees the door.</small></span><div class="stepper" data-step="doors"><button type="button" data-d="-1" aria-label="Fewer sliding screen doors">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="More sliding screen doors">+</button></div></div>
           <div class="opt"><span>New frames and clips <b class="amt">+$10 a screen</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Why this price">i</button><small>Bent, missing or loose frames get rebuilt to fit, with new clips. Either mesh.</small></span><button type="button" class="switch" data-sw="frames" role="switch" aria-checked="false" aria-label="New frames and clips, $10 a screen"></button></div>
           <p class="why" hidden>When a frame is bent, loose or missing corners, new mesh won't sit tight in it. We rebuild the frame to fit your window with new corners and clips, so the screen snaps in and stays. $10 a screen, with either mesh.</p>
-          <div class="note">Re-meshed on site, same visit. $149 job minimum when screens are the only service, and discounts never take it lower. 2 year warranty.</div>
+          <div class="note">Mobile service; on-site work or pickup, return and reinstallation are confirmed for your job. $149 job minimum when screens are the only service, and discounts never take it lower. 2 year warranty.</div>
           <div class="note" id="comboNote" hidden></div>
           <p class="get"><b>What you get.</b> Air in and bugs out, a clearer view from inside, screens that pop in and out easily, and a 2 year warranty on the mesh.</p>
           <p class="now"><b>Why now.</b> UV runs about nine months a year up here. Builder mesh goes brittle, then the wind finishes it off.</p>
@@ -782,7 +785,7 @@
         </details>
         <details class="faq-item">
           <summary>Do you do this at my house or take them away?</summary>
-          <p>At your house, the same visit. We carry frame stock, corners, spline and both meshes on the truck, so nothing leaves and nothing comes back a week later.</p>
+          <p>We confirm whether your screens will be handled on site or collected for return and reinstallation. Your written quote states the arrangement and expected turnaround.</p>
         </details>
         <details class="faq-item">
           <summary>What is the warranty?</summary>
@@ -1008,7 +1011,7 @@
   <a class="qb qb-ghost" href="tel:7145590300">Call</a>
 </nav>
 </div>
-<script>window.TQ={"svc":["scr"],"mode":"scr","tech":"9b123a2d04"};</script>
+<script>window.TQ={"optional3d":true,"svc":["scr"],"mode":"scr","tech":"9b123a2d04"};</script>
 <script src="assets/quote/quote.js?v=83c06b86e6" defer></script>
 <!-- /tq:tail -->
 </body>
