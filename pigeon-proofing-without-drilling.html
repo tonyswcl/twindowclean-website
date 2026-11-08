@@ -48,7 +48,7 @@
 
   <link href="style.css" rel="stylesheet">
   <!-- tq:css -->
-<link href="assets/quote/quote.css?v=760171bba6" rel="stylesheet">
+<link href="assets/quote/quote.css?v=f1c362d8f0" rel="stylesheet">
 <!-- /tq:css -->
 
   <script type="application/ld+json">
@@ -466,7 +466,7 @@
         <b>Windows</b><span>From $149, screens, tracks and sills included</span></button>
       <button type="button" class="tile" data-svc="scr" aria-pressed="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 8h16M4 13h16M9 3v18M15 3v18" stroke-width="1"/></svg>
-        <b>Screens</b><span>Re-meshed on site from $53.99</span></button>
+        <b>Screens</b><span>Mobile screen service from $53.99</span></button>
     </div>
     <button type="button" class="more-svc" id="moreSvc" aria-expanded="false" aria-controls="xtiles"><b>Find our other services</b><span>Pressure washing, hard water, roof wash, gutters, new construction and more</span></button>
     <div class="xtiles" id="xtiles" hidden>
@@ -524,16 +524,14 @@
         </div></template>
         <template data-tpl><div class="svc" data-body="scr">
           <h3>Window screen repair <small>per screen</small></h3>
-          <div class="opt stack"><span>Mesh</span><div class="seg2 mesh" data-seg="pet"><button type="button" data-v="0" aria-pressed="false">Charcoal fiberglass<small>$53.99</small></button><button type="button" data-v="1" aria-pressed="true">All weather<small>$64.99</small></button></div></div>
-          <p class="note" data-mesh-fact="0">The same class of mesh your builder used, installed and tensioned right. Clearest view and good airflow. Fine for shaded windows.</p>
-          <p class="note" data-mesh-fact="1">Heavy vinyl coated polyester, UV and weather resistant, made for outdoor sun. Holds up to desert sun, wind and pets better than standard fiberglass.</p>
+          <div class="screen-options" role="group" aria-label="Compare screen options"><button type="button" class="screen-option" data-screen-package="0" aria-pressed="false"><b>Standard Re-Mesh</b><strong>from $53.99</strong><span>Usable existing frame. Standard insect mesh.</span><small>Select for quote</small></button><button type="button" class="screen-option" data-screen-package="1" aria-pressed="false"><b>All-Weather Upgrade</b><strong>from $64.99</strong><span>Usable existing frame. All-Weather Solar-Control Mesh.</span><small>Select for quote</small></button><button type="button" class="screen-option" data-screen-package="2" aria-pressed="false"><b>Full Upgrade</b><strong>from $84.99</strong><span>New custom frame. All-Weather Solar-Control Mesh.</span><small>Select for quote</small></button></div>
+          <p class="note" data-mesh-fact="0">Standard insect screening prioritizes airflow and a clearer outward view. We reuse a sound, suitable frame.</p>
+          <p class="note" data-mesh-fact="1">All-Weather Solar-Control Mesh is durable, pet-resistant vinyl-coated polyester for additional shading. It can reduce direct solar heat and glare; the denser weave also changes outward visibility, airflow and incoming light.</p>
           <div class="opt"><span>Window screens</span><div class="stepper" data-step="screens"><button type="button" data-d="-1" aria-label="Fewer screens">−</button><output class="num">4</output><button type="button" data-d="1" aria-label="More screens">+</button></div></div>
           <div class="opt"><span>Sliding screen doors <small id="doorNote">About twice a window screen. An estimate until Tony sees the door.</small></span><div class="stepper" data-step="doors"><button type="button" data-d="-1" aria-label="Fewer sliding screen doors">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="More sliding screen doors">+</button></div></div>
-          <div class="opt"><span>New frames and clips <b class="amt">+$10 a screen</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Why this price">i</button><small>Bent, missing or loose frames get rebuilt to fit, with new clips. Either mesh.</small></span><button type="button" class="switch" data-sw="frames" role="switch" aria-checked="false" aria-label="New frames and clips, $10 a screen"></button></div>
-          <p class="why" hidden>When a frame is bent, loose or missing corners, new mesh won't sit tight in it. We rebuild the frame to fit your window with new corners and clips, so the screen snaps in and stays. $10 a screen, with either mesh.</p>
-          <div class="note">On-site repair or pickup, return and reinstallation are confirmed for your job. $149 job minimum when screens are the only service, and discounts never take it lower. 2 year warranty.</div>
+          <div class="note">Screen-only jobs use pickup and inspection, followed by a separate confirmed return for installation and only the cleaning in your written agreement. Both dates are requests until Tony confirms them. Combined-service arrangements are confirmed for your job. $149 screen-only minimum; discounts do not reduce it. Oversize screens, sliding doors, specialty fabrication and extra hardware are assessed separately.</div>
           <div class="note" id="comboNote" hidden></div>
-          <p class="get"><b>What you get.</b> Air in and bugs out, a clearer view from inside, screens that pop in and out easily, and a 2 year warranty on the mesh.</p>
+          <p class="get"><b>What you get.</b> Air in and bugs out, a clearer view from inside, screens that pop in and out easily, and the scope explained in writing.</p>
           <p class="now"><b>Why now.</b> UV runs about nine months a year up here. Builder mesh goes brittle, then the wind finishes it off.</p>
           <button type="button" class="see3d open3d" data-mode="scr">Compare the mesh in 3D →</button>
         </div></template>
@@ -631,6 +629,7 @@
         <div class="seg2 wrapok" data-seg="time"><button type="button" data-v="0" aria-pressed="false">Morning</button><button type="button" data-v="1" aria-pressed="false">Afternoon</button><button type="button" data-v="2" aria-pressed="false">I prefer weekends</button></div>
         <p class="small strong" id="dayPicked"></p>
         <p class="small" id="dayRule">Tony confirms by text, and if your day fills up he'll offer the closest one.</p>
+<div id="screenReturn" class="screen-return" hidden><h3>Visit 2 — Drop-off, Installation &amp; Agreed Cleaning</h3><p>Request a separate return appointment, or let Tony confirm it after inspection. Cleaning is limited to your written agreement. Pickup is not a completed job.</p><label for="screenReturnMode">Return arrangement</label><select id="screenReturnMode"><option value="confirm">Tony confirms the return date after inspection</option><option value="request">I would like to request a return date</option></select><div id="screenReturnFields" hidden><label for="screenReturnDate">Preferred return date</label><input id="screenReturnDate" type="date" aria-describedby="screenReturnError"><label for="screenReturnPart">Preferred return time</label><select id="screenReturnPart"><option value="">No preference</option><option value="morning">Morning</option><option value="afternoon">Afternoon</option></select></div><p id="screenReturnError" class="err" role="alert"></p><p id="screenReturnSummary" class="small" aria-live="polite"></p></div>
       </div>
       <div class="card plan">
         <div class="lab" id="planLab">How often</div>
@@ -647,9 +646,9 @@
     <div class="card wait">
       <div class="lab">What happens next</div>
       <div class="reasons">
-        <p><b>Your price is set.</b> It's right above, and it doesn't change on the day.</p>
+        <p><b>Scope and price in writing.</b> Tony confirms eligibility and the final agreed work before it starts.</p>
         <p><b>Tony confirms by text.</b> He brings everything, works around your day, and you don't lift a finger.</p>
-        <p><b>Nothing to pay now.</b> Pay by a QuickBooks payment link or Zelle once the work is done and you've looked it over.</p>
+        <p><b>Requesting a quote takes no payment.</b> Any agreed deposit and final payment terms are confirmed in writing.</p>
       </div>
       <div id="waitWrap">
         <div class="lab" style="margin-top:14px">What happens if you wait</div>
@@ -683,7 +682,7 @@
         </div>
         <p class="small" id="wayNote">Texting works from a phone. On a computer, email or the form is easiest.</p>
         <div id="sent" class="sent" hidden>
-          <b>Sent. Tony has your quote.</b>
+          <b>Request received. Appointment pending confirmation.</b>
           <p>He'll text you back from 714-559-0300. Save the number so you know it's him.</p>
           <div class="prev" id="prevNote" hidden>Preview only, nothing was sent. On the live site this lands in Tony's inbox with the full breakdown.</div>
         </div>
@@ -952,11 +951,10 @@
       <button type="button" class="replay" data-hact="replay">▶ Watch it again</button>
     </div>
     <div class="ops" data-for="scr" hidden>
-      <div class="orow col"><span>Mesh</span><div class="seg2 mesh" data-seg="pet"><button type="button" data-v="0" aria-pressed="false">Charcoal fiberglass<small>$53.99</small></button><button type="button" data-v="1" aria-pressed="true">All weather<small>$64.99</small></button></div></div>
+      <div class="screen-options" role="group" aria-label="Compare screen options"><button type="button" class="screen-option" data-screen-package="0" aria-pressed="false"><b>Standard Re-Mesh</b><strong>from $53.99</strong><span>Usable existing frame. Standard insect mesh.</span><small>Select for quote</small></button><button type="button" class="screen-option" data-screen-package="1" aria-pressed="false"><b>All-Weather Upgrade</b><strong>from $64.99</strong><span>Usable existing frame. All-Weather Solar-Control Mesh.</span><small>Select for quote</small></button><button type="button" class="screen-option" data-screen-package="2" aria-pressed="false"><b>Full Upgrade</b><strong>from $84.99</strong><span>New custom frame. All-Weather Solar-Control Mesh.</span><small>Select for quote</small></button></div>
       <p class="onote" data-mesh-fact="0">The same class of mesh your builder used, tensioned right. Clearest view, good airflow, fine for shaded windows.</p>
-      <p class="onote" data-mesh-fact="1">Heavy vinyl coated polyester, UV and weather resistant, so it holds up to desert sun, wind and pets better than standard fiberglass.</p>
+      <p class="onote" data-mesh-fact="1">All-Weather Solar-Control Mesh provides additional shading with durable, pet-resistant vinyl-coated polyester. The denser weave changes outward visibility, airflow and incoming light.</p>
       <div class="orow"><span>Screens</span><div class="stepper" data-step="screens"><button type="button" data-d="-1" aria-label="Fewer screens">−</button><output class="num">4</output><button type="button" data-d="1" aria-label="More screens">+</button></div></div>
-      <div class="orow"><span>New frames and clips <b class="amt">+$10 a screen</b></span><button type="button" class="switch" data-sw="frames" role="switch" aria-checked="false" aria-label="New frames and clips, $10 a screen"></button></div>
       <button type="button" class="replay" data-hact="replay">▶ Watch it again</button>
     </div>
     <div class="ops" data-for="com" hidden>
@@ -1010,7 +1008,7 @@
 </nav>
 </div>
 <script>window.TQ={"svc":["pig"],"mode":"pig","tech":"9b123a2d04"};</script>
-<script src="assets/quote/quote.js?v=83c06b86e6" defer></script>
+<script src="assets/quote/quote.js?v=d5f56d597c" defer></script>
 <!-- /tq:tail -->
 </body>
 </html>
