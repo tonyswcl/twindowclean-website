@@ -50,7 +50,7 @@
 
   <link href="style.css" rel="stylesheet">
   <!-- tq:css -->
-<link href="assets/quote/quote.css?v=760171bba6" rel="stylesheet">
+<link href="assets/quote/quote.css?v=f1c362d8f0" rel="stylesheet">
   <link rel="preload" as="image" href="assets/quote/home-plain-4x5.webp" fetchpriority="high">
 <!-- /tq:css -->
 
@@ -452,16 +452,14 @@
         </div>
         <template data-tpl><div class="svc" data-body="scr">
           <h3>Reparación de mosquiteros <small>por mosquitero</small></h3>
-          <div class="opt stack"><span>Malla</span><div class="seg2 mesh" data-seg="pet"><button type="button" data-v="0" aria-pressed="false">Fibra de vidrio gris<small>$53.99</small></button><button type="button" data-v="1" aria-pressed="true">Todo clima<small>$64.99</small></button></div></div>
-          <p class="note" data-mesh-fact="0">La misma clase de malla que usó el constructor, instalada y tensada bien. La vista más clara y buen paso de aire. Bien para ventanas con sombra.</p>
-          <p class="note" data-mesh-fact="1">Poliéster recubierto de vinil, resistente al sol y al clima, hecho para estar afuera. Aguanta el sol del desierto, el viento y las mascotas mejor que la fibra de vidrio común.</p>
+          <div class="screen-options" role="group" aria-label="Compara opciones de mosquiteros"><button type="button" class="screen-option" data-screen-package="0" aria-pressed="false"><b>Malla estándar</b><strong>desde $53.99</strong><span>Marco existente utilizable. Malla estándar para insectos.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="1" aria-pressed="false"><b>Mejora All-Weather</b><strong>desde $64.99</strong><span>Marco existente utilizable. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="2" aria-pressed="false"><b>Mejora completa</b><strong>desde $84.99</strong><span>Marco nuevo a medida. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button></div>
+          <p class="note" data-mesh-fact="0">La malla estándar para insectos prioriza la ventilación y una vista más clara. Reutilizamos un marco adecuado en buen estado.</p>
+          <p class="note" data-mesh-fact="1">La malla de control solar All-Weather es de poliéster recubierto de vinilo, duradera y resistente a mascotas. Aporta sombra y reduce calor solar directo y deslumbramiento; su tejido más denso también cambia la vista, la ventilación y la luz.</p>
           <div class="opt"><span>Mosquiteros de ventana</span><div class="stepper" data-step="screens"><button type="button" data-d="-1" aria-label="Menos mosquiteros">−</button><output class="num">4</output><button type="button" data-d="1" aria-label="Más mosquiteros">+</button></div></div>
           <div class="opt"><span>Puertas corredizas de mosquitero <small id="doorNote">Como el doble de un mosquitero de ventana. Es un estimado hasta que Tony vea la puerta.</small></span><div class="stepper" data-step="doors"><button type="button" data-d="-1" aria-label="Menos puertas corredizas">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="Más puertas corredizas">+</button></div></div>
-          <div class="opt"><span>Marcos y clips nuevos <b class="amt">+$10 por mosquitero</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button><small>Marcos doblados, flojos o perdidos se rehacen a la medida, con clips nuevos. Con cualquier malla.</small></span><button type="button" class="switch" data-sw="frames" role="switch" aria-checked="false" aria-label="Marcos y clips nuevos, $10 por mosquitero"></button></div>
-          <p class="why" hidden>Cuando un marco está doblado, flojo o sin esquinas, la malla nueva no queda firme. Rehacemos el marco a la medida de tu ventana con esquinas y clips nuevos, para que el mosquitero entre y se quede. $10 por mosquitero, con cualquier malla.</p>
-          <div class="note">Reparación en el lugar o recogida, devolución y reinstalación según el trabajo confirmado. Mínimo de $149 cuando los mosquiteros son el único servicio, y ningún descuento lo baja. 2 años de garantía.</div>
+          <div class="note">El trabajo solo de mosquiteros lleva dos citas: recogida e inspección, y otra confirmada para entrega, instalación y solo la limpieza del acuerdo por escrito. Las fechas solicitadas no son reservas confirmadas. Mínimo de $149 para trabajo solo de mosquiteros; ningún descuento lo baja. Medidas grandes, puertas, fabricación especial y herrajes se evalúan aparte.</div>
           <div class="note" id="comboNote" hidden></div>
-          <p class="get"><b>Lo que recibes.</b> Aire adentro y bichos afuera, una vista más clara desde adentro, mosquiteros que entran y salen fácil, y 2 años de garantía en la malla.</p>
+          <p class="get"><b>Lo que recibes.</b> Aire adentro y bichos afuera, una vista más clara desde adentro, mosquiteros que entran y salen fácil, y el alcance explicado por escrito.</p>
           <p class="now"><b>Por qué ahora.</b> El sol fuerte dura como nueve meses al año aquí. La malla del constructor se pone quebradiza y el viento la termina.</p>
           <button type="button" class="see3d open3d" data-mode="scr">Compara las mallas en 3D →</button>
         </div></template>
@@ -559,6 +557,7 @@
         <div class="seg2 wrapok" data-seg="time"><button type="button" data-v="0" aria-pressed="false">Mañana</button><button type="button" data-v="1" aria-pressed="false">Tarde</button><button type="button" data-v="2" aria-pressed="false">Prefiero fin de semana</button></div>
         <p class="small strong" id="dayPicked"></p>
         <p class="small" id="dayRule">Tony confirma por mensaje de texto, y si tu día se llena te ofrece el más cercano.</p>
+<div id="screenReturn" class="screen-return" hidden><h3>Visita 2 — Entrega, instalación y limpieza acordada</h3><p>Solicita otra cita de regreso o deja que Tony la confirme después de inspeccionar. Solo se incluye la limpieza del acuerdo por escrito. La recogida no es un trabajo terminado.</p><label for="screenReturnMode">Fecha de regreso</label><select id="screenReturnMode"><option value="confirm">Tony confirma el regreso después de inspeccionar</option><option value="request">Quiero solicitar una fecha de regreso</option></select><div id="screenReturnFields" hidden><label for="screenReturnDate">Fecha de regreso preferida</label><input id="screenReturnDate" type="date" aria-describedby="screenReturnError"><label for="screenReturnPart">Horario de regreso preferido</label><select id="screenReturnPart"><option value="">Sin preferencia</option><option value="morning">Mañana</option><option value="afternoon">Tarde</option></select></div><p id="screenReturnError" class="err" role="alert"></p><p id="screenReturnSummary" class="small" aria-live="polite"></p></div>
       </div>
       <div class="card plan">
         <div class="lab" id="planLab">Cada cuánto</div>
@@ -575,9 +574,9 @@
     <div class="card wait">
       <div class="lab">Qué sigue</div>
       <div class="reasons">
-        <p><b>Tu precio ya está fijo.</b> Está aquí arriba, y no cambia el día del trabajo.</p>
+        <p><b>Alcance y precio por escrito.</b> Tony confirma las condiciones y el trabajo acordado antes de empezar.</p>
         <p><b>Tony confirma por mensaje.</b> Trae todo, se acomoda a tu día, y tú no mueves un dedo.</p>
-        <p><b>No pagas nada ahora.</b> Paga con un enlace de pago de QuickBooks o por Zelle cuando el trabajo esté hecho y lo hayas revisado.</p>
+        <p><b>Solicitar una cotización no requiere pago.</b> El depósito acordado y los términos de pago se confirman por escrito.</p>
       </div>
       <div id="waitWrap">
         <div class="lab" style="margin-top:14px">Qué pasa si esperas</div>
@@ -915,11 +914,10 @@
       <button type="button" class="replay" data-hact="replay">▶ Verlo otra vez</button>
     </div>
     <div class="ops" data-for="scr" hidden>
-      <div class="orow col"><span>Malla</span><div class="seg2 mesh" data-seg="pet"><button type="button" data-v="0" aria-pressed="false">Fibra de vidrio gris<small>$53.99</small></button><button type="button" data-v="1" aria-pressed="true">Todo clima<small>$64.99</small></button></div></div>
+      <div class="screen-options" role="group" aria-label="Compara opciones de mosquiteros"><button type="button" class="screen-option" data-screen-package="0" aria-pressed="false"><b>Malla estándar</b><strong>desde $53.99</strong><span>Marco existente utilizable. Malla estándar para insectos.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="1" aria-pressed="false"><b>Mejora All-Weather</b><strong>desde $64.99</strong><span>Marco existente utilizable. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="2" aria-pressed="false"><b>Mejora completa</b><strong>desde $84.99</strong><span>Marco nuevo a medida. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button></div>
       <p class="onote" data-mesh-fact="0">La misma clase de malla que usó el constructor, bien tensada. La vista más clara, buen paso de aire, bien para ventanas con sombra.</p>
-      <p class="onote" data-mesh-fact="1">Poliéster recubierto de vinil, resistente al sol y al clima, aguanta sol, viento y mascotas mejor que la fibra de vidrio común.</p>
+      <p class="onote" data-mesh-fact="1">La malla de control solar All-Weather aporta sombra con poliéster recubierto de vinilo, resistente a mascotas. Su tejido más denso cambia la vista, la ventilación y la luz.</p>
       <div class="orow"><span>Mosquiteros</span><div class="stepper" data-step="screens"><button type="button" data-d="-1" aria-label="Menos mosquiteros">−</button><output class="num">4</output><button type="button" data-d="1" aria-label="Más mosquiteros">+</button></div></div>
-      <div class="orow"><span>Marcos y clips nuevos <b class="amt">+$10 por mosquitero</b></span><button type="button" class="switch" data-sw="frames" role="switch" aria-checked="false" aria-label="Marcos y clips nuevos, $10 por mosquitero"></button></div>
       <button type="button" class="replay" data-hact="replay">▶ Verlo otra vez</button>
     </div>
     <div class="ops" data-for="com" hidden>
@@ -973,7 +971,7 @@
 </nav>
 </div>
 <script>window.TQ={"svc":["sol"],"mode":"sol","lang":"es","tech":"9b123a2d04"};</script>
-<script src="assets/quote/quote.js?v=83c06b86e6" defer></script>
+<script src="assets/quote/quote.js?v=d5f56d597c" defer></script>
 <!-- /tq:tail -->
 </body>
 </html>
