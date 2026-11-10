@@ -266,6 +266,7 @@
   "logo": "https://twindowclean.com/assets/logo.png"
 }
 </script>
+<link rel="stylesheet" href="assets/request.css?v=20261110">
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -311,51 +312,17 @@
       </div>
       <div class="go">
         <a class="qb qb-gold" href="#quote">Elige tu servicio</a>
-        <button type="button" class="qb qb-ghost open3d" data-mode="tour">Verlo en mi casa</button>
+
       </div>
       <p class="rate"><a href="https://g.page/r/CWQH1O3JGKh4EAE">Lee nuestras reseñas en Google</a> · Inspección gratis · Satisfacción garantizada</p>
 <!-- /tq:cta -->
     </div>
 <!-- tq:media -->
-    <div class="wipe-col">
-      <div class="modes" id="modes" role="group" aria-label="Qué mostrar">
-        <button type="button" data-m="r3d" aria-pressed="true">Casa en 3D</button>
-        <button type="button" data-m="win" aria-pressed="false">Ventanas</button>
-        <button type="button" data-m="scr" aria-pressed="false">Mosquiteros</button>
-      </div>
-      <div class="wipe" id="wipe">
-        <div class="lay r3d open3d" data-mode="tour" data-lay="r3d" role="button" tabindex="0" aria-label="Abrir la vista 3D de tu casa">
-          <img class="r3d-poster" id="r3dPoster" src="assets/quote/home-plain-4x5.webp" alt="Modelo 3D de una casa del High Desert con ventanas limpias y paneles solares lavados" width="800" height="1000" fetchpriority="high" decoding="async">
-          <div class="h3host" id="h3host"></div>
-          <div class="callout" id="hcall" hidden><i></i><span></span></div>
-          <span class="r3d-go">Verlo en mi casa</span>
-        </div>
-        <div class="lay car" data-lay="win" hidden>
-          <div class="track">
-            <figure><img src="assets/quote/win-after.jpg" alt="Puerta corrediza de vidrio, clara después de la limpieza" width="800" height="600" loading="lazy" decoding="async"><figcaption>Puerta corrediza · vidrio claro</figcaption></figure>
-            <figure><img src="assets/photos/apple-valley-window-02.jpg" alt="Ventanal de esquina en Apple Valley después de la limpieza, con vista al desierto" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Ventanal de esquina · Apple Valley</figcaption></figure>
-            <figure><img src="assets/photos/spring-valley-lake-window-02.jpg" alt="Ventana en arco y corrediza en una casa de Spring Valley Lake después de la limpieza" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Ventana en arco · Spring Valley Lake</figcaption></figure>
-          </div>
-          <div class="dots" aria-hidden="true"></div>
-          <div class="done show"><b>Mosquiteros, rieles y repisas también.</b><span>$149 un piso, $249 dos pisos.</span></div>
-        </div>
-        <div class="lay car" data-lay="scr" hidden>
-          <div class="track">
-            <figure><img src="assets/gallery/screen-after.jpg" alt="Marco de mosquitero con malla nueva todo clima" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Malla nueva todo clima</figcaption></figure>
-            <figure><img src="assets/photos/hub-screen-repair-02.jpg" alt="Juego completo de mosquiteros con malla nueva, terminado en una visita" width="750" height="1000" loading="lazy" decoding="async"><figcaption>Un juego completo con malla nueva</figcaption></figure>
-          </div>
-          <div class="dots" aria-hidden="true"></div>
-          <div class="done show"><b>Desde $53.99 por mosquitero.</b><span>Reparación en el lugar o recogida, devolución y reinstalación según el trabajo confirmado. Mejora completa desde $84.99.</span></div>
-        </div>
-        <span class="lbl" id="wlbl">3D en vivo</span>
-      </div>
-      <p class="wipe-note" id="wnote">Una casa modelo terminada como dejamos la tuya. Tócala para probar con la tuya.</p>
-    </div>
+
 <!-- /tq:media -->
   </div>
 </section>
-<!-- tq:steps -->
-<!-- REAL WORK: photos from real jobs, between the 3D and the quote -->
+<!-- service request -->
 <section class="tq-work" id="work" data-work-svc="win" data-local="0">
   <div class="wrap">
     <span class="where">Trabajo real</span>
@@ -372,326 +339,61 @@
     <p class="work-next">¿Te gusta lo que ves? <a href="#quote">Arma tu proyecto aquí abajo.</a></p>
   </div>
 </section>
-
-<!-- PASO 1: elige y ve el precio -->
-<section class="tq-step" id="quote" data-nosnippet>
-  <span id="need"></span>
-  <div class="wrap">
-    <div id="shared" class="banner" hidden>Abriste una cotización compartida. Cambia lo que quieras.</div>
-    <ol class="how" aria-label="Cómo funciona"><li aria-current="step"><b>1</b>Elige tu servicio</li><li><b>2</b>Cuéntanos de tu casa</li><li><b>3</b>Ve tu precio</li><li><b>4</b>Pide un día</li><li><b>5</b>Tony confirma por mensaje</li></ol>
-    <div class="step-head"><span class="step-n">1</span><h2>Elige tu servicio</h2></div>
-    <p class="step-sub">Elige uno o varios. Son precios reales, y Tony los confirma por escrito antes de empezar.</p>
-    <div class="tiles" id="tiles">
-      <button type="button" class="tile" data-svc="win" aria-pressed="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M3 12h18"/></svg>
-        <b>Ventanas</b><span>Desde $149, mosquiteros, rieles y repisas incluidos</span></button>
-      <button type="button" class="tile" data-svc="scr" aria-pressed="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 8h16M4 13h16M9 3v18M15 3v18" stroke-width="1"/></svg>
-        <b>Mosquiteros</b><span>Malla nueva en el momento desde $53.99</span></button>
-      <button type="button" class="tile" data-svc="sol" aria-pressed="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 18 7 6h10l3 12Z"/><path d="M5.5 12h13M12 6v12"/></svg>
-        <b>Paneles solares</b><span>$7 por panel, secan sin manchas</span></button>
-      <button type="button" class="tile" data-svc="pig" aria-pressed="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 13c4 0 6-3 9-3s4 2 6 2l3-2-1 4c-1 3-4 5-8 5-5 0-9-2-9-6Z"/><circle cx="17" cy="11" r=".5" fill="currentColor"/></svg>
-        <b>Control de palomas</b><span>$450 hasta 12 paneles, espantapájaros gratis</span></button>
+<section class="request-section" id="quote" aria-labelledby="request-title" data-default-services='["win"]'>
+  <div class="wrap"><span class="where">Planeemos tu servicio</span><h2 id="request-title">Cuéntale a Tony qué necesita tu propiedad</h2>
+  <p class="request-intro">Elige uno o varios servicios y una fecha preferida. Tony confirma personalmente el trabajo, el precio final y la cita. No se cobra aquí.</p>
+  <form id="service-request" action="https://formspree.io/f/mdkzdael" method="post" novalidate>
+    <fieldset class="request-services"><legend>¿En qué podemos ayudarte?</legend><p class="request-hint">Selecciona todo lo que necesites. Los precios iniciales dependen del acceso, las cantidades y el trabajo acordado.</p><div class="request-choices"><label class="request-choice"><input type="checkbox" name="services" value="win"><span><b>Limpieza de ventanas</b><small>From $149</small></span></label><label class="request-choice"><input type="checkbox" name="services" value="scr"><span><b>Reparación o reemplazo de mosquiteros</b><small>From $53.99 / screen</small></span></label><label class="request-choice"><input type="checkbox" name="services" value="sol"><span><b>Limpieza de paneles solares</b><small>$7 / panel</small></span></label><label class="request-choice"><input type="checkbox" name="services" value="pig"><span><b>Protección de paneles contra palomas</b><small>From $450</small></span></label></div>
+    <details class="request-more"><summary>Otros servicios exteriores</summary><div><label><input type="checkbox" name="services" value="hw"> Manchas de agua dura</label><label><input type="checkbox" name="services" value="roof"> Lavado suave de techo</label><label><input type="checkbox" name="services" value="pw"> Lavado a presión</label><label><input type="checkbox" name="services" value="gut"> Limpieza de canaletas</label><label><input type="checkbox" name="services" value="com"> Vidrio comercial</label><label><input type="checkbox" name="services" value="pc"> Limpieza después de construcción</label><label><input type="checkbox" name="services" value="ad"> Retiro de adhesivos</label><label><input type="checkbox" name="services" value="gr"> Retiro de grafiti</label><label><input type="checkbox" name="services" value="tb"> Limpieza de botes</label></div></details></fieldset>
+    <div class="request-grid">
+      <label class="request-field" for="rq-name">Tu nombre<input id="rq-name" name="name" type="text" required autocomplete="name" maxlength="80"></label>
+      <label class="request-field" for="rq-phone">Número de teléfono<input id="rq-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" maxlength="24"></label>
+      <label class="request-field" for="rq-email">Correo electrónico (opcional)<input id="rq-email" name="email" type="email" autocomplete="email" maxlength="120"></label>
+      <label class="request-field" for="rq-address">Dirección de la propiedad, o ciudad y código postal<input id="rq-address" name="address" type="text" required autocomplete="street-address" maxlength="180"></label>
     </div>
-    <button type="button" class="more-svc" id="moreSvc" aria-expanded="false" aria-controls="xtiles"><b>Ver los demás servicios</b><span>Lavado a presión, manchas de agua dura, lavado de techo, canaletas, obra nueva y más</span></button>
-    <div class="xtiles" id="xtiles" hidden>
-      <button type="button" class="xtile" data-svc="hw" aria-pressed="false"><b>Manchas de agua dura</b><span>desde $12 por vidrio</span></button>
-      <button type="button" class="xtile" data-svc="roof" aria-pressed="false"><b>Lavado suave de techo</b><span>todo el techo desde $599</span></button>
-      <button type="button" class="xtile" data-svc="pc" aria-pressed="false"><b>Limpieza de obra nueva</b><span>desde $249 por dentro y por fuera</span></button>
-      <button type="button" class="xtile" data-svc="gut" aria-pressed="false"><b>Limpieza de canaletas</b><span>se cotiza en el lugar</span></button>
-      <button type="button" class="xtile" data-svc="pw" aria-pressed="false"><b>Lavado a presión</b><span>cochera y patio, se cotiza en el lugar</span></button>
-      <button type="button" class="xtile" data-svc="tb" aria-pressed="false"><b>Limpieza de botes de basura</b><span>se cotiza en el lugar</span></button>
-      <button type="button" class="xtile" data-svc="ad" aria-pressed="false"><b>Quitar calcomanías y vinil</b><span>desde $129</span></button>
-      <button type="button" class="xtile" data-svc="gr" aria-pressed="false"><b>Quitar grafiti</b><span>desde $129</span></button>
-      <button type="button" class="xtile" data-svc="com" aria-pressed="false"><b>Locales y edificios</b><span>$149 por dentro y por fuera</span></button>
+    <label class="request-field" for="rq-notes">¿Qué trabajo necesitas?<textarea id="rq-notes" name="notes" rows="3" maxlength="1200" placeholder="Algunos detalles de tu propiedad y del trabajo que necesitas"></textarea></label>
+    <details class="request-details" id="rq-details"><summary>Detalles útiles (opcionales)</summary><div class="request-grid">
+      <label class="request-field" for="rq-stories">Altura de la propiedad<select id="rq-stories" name="stories"><option value="">No sé</option><option value="1">Un piso</option><option value="2">Dos pisos</option><option value="3">Tres o más</option></select></label>
+      <label class="request-field" data-for-service="win com" hidden for="rq-windows">Cantidad aproximada de ventanas<input id="rq-windows" name="windows" type="number" min="0" max="10000" inputmode="numeric"></label>
+      <label class="request-field" data-for-service="scr" hidden for="rq-screens">Cantidad aproximada de mosquiteros<input id="rq-screens" name="screens" type="number" min="0" max="10000" inputmode="numeric"></label>
+      <label class="request-field" data-for-service="sol pig" hidden for="rq-panels">Cantidad aproximada de paneles solares<input id="rq-panels" name="panels" type="number" min="0" max="10000" inputmode="numeric"></label>
+      <label class="request-field" data-for-service="scr" hidden for="rq-screen-package">Opción de mosquitero<select id="rq-screen-package" name="screen_package"><option value="">Tony me asesora</option><option value="0">Standard Re-Mesh, from $53.99</option><option value="1">All-Weather Upgrade, from $64.99</option><option value="2">Full Upgrade, from $84.99</option></select></label>
+    </div><p>Menciona vidrio interior, mosquiteros dañados, agua dura u otros problemas en los detalles. Solo se agrega trabajo adicional con tu aprobación.</p></details>
+    <fieldset class="request-dates"><legend>¿Cuándo prefieres el servicio?</legend><p>Las fechas son solicitudes hasta que Tony confirme. Puedes dejarlas en blanco si tienes flexibilidad.</p><div class="request-grid">
+      <label class="request-field" for="rq-requested_date">Fecha preferida<input id="rq-requested_date" name="requested_date" type="date" ></label>
+      <label class="request-field" for="rq-requested-part">Horario preferido<select id="rq-requested-part" name="requested_part"><option value="flexible">Flexible</option><option value="morning">Mañana</option><option value="afternoon">Tarde</option></select></label>
+      <label class="request-field" for="rq-secondary_date">Fecha alternativa (opcional)<input id="rq-secondary_date" name="secondary_date" type="date" ></label>
     </div>
-
-    <div class="price-grid" id="price">
-      <div class="card svcs">
-        <div class="empty" id="empty" hidden>Toca un servicio arriba para ver sus opciones.</div>
-        <div class="svc" data-body="win">
-          <h3>Limpieza de ventanas <small>$149 / $249</small></h3>
-          <div class="opt"><span>Tu casa</span><div class="seg2" data-seg="stories"><button type="button" data-v="1" aria-pressed="true">1 piso</button><button type="button" data-v="2" aria-pressed="false">2 pisos</button></div></div>
-          <div class="note" id="winNote"></div>
-          <div class="opt"><span><span id="moreLbl">Más de 12 ventanas </span><b class="amt" id="moreAmt">+$39</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button></span><button type="button" class="switch" data-sw="more" role="switch" aria-checked="false" aria-label="Más ventanas de lo normal"></button></div>
-          <p class="why" hidden>El precio base cubre de 10 a 12 ventanas en un piso o de 18 a 20 en dos pisos. Pasando de ahí hay más vidrio, más mosquiteros y más rieles que hacer bien, así que son $39 fijos más, en uno o dos pisos.</p>
-          <div class="opt"><span>Ventanas por dentro también <b class="amt">+$49</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button><small>Todas las ventanas de la casa, rieles aspirados y secados</small></span><button type="button" class="switch" data-sw="inside" role="switch" aria-checked="false" aria-label="Agregar ventanas por dentro"></button></div>
-          <p class="why" hidden>Un solo pago de $49 por todas las ventanas de adentro, con los rieles aspirados y secados. La mayoría cobra por ventana el trabajo interior. Nosotros ya estamos ahí con el agua y las herramientas, así que el interior te cuesta mucho menos que una visita aparte.</p>
-          <div class="opt"><span>Casa grande o especial <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button><small>Casas de lago, vidrios altos y muchos. Tony confirma el precio después de verla.</small></span><button type="button" class="switch" data-sw="large" role="switch" aria-checked="false" aria-label="Casa grande o especial"></button></div>
-          <p class="why" hidden>Las casas grandes varían mucho. Los vidrios y mosquiteros extra se cuentan en el lugar o por satélite, y por dentro y por fuera puede salir en $499 a $599 en algunas casas. Tony te da el precio exacto antes de empezar, sin sorpresas ese día.</p>
-          <p class="get"><b>Lo que recibes.</b> Más luz en cada cuarto, una vista clara, mosquiteros y rieles que corren como deben, y vidrio que dura porque el agua dura nunca alcanza a marcarlo.</p>
-          <p class="now"><b>Por qué ahora.</b> El polvo y el rocío de los aspersores se acumulan rápido aquí arriba. Una limpieza cada 3 a 6 meses evita que el agua dura se fije en el vidrio.</p>
-          <button type="button" class="see3d open3d" data-mode="win">Mira cómo se limpia una ventana en 3D →</button>
-        </div>
-        <template data-tpl><div class="svc" data-body="pig">
-          <h3>Control de palomas <small>$450+</small></h3>
-          <div class="note">$450 cubre hasta 12 paneles en una casa de un piso. Una casa de dos pisos suma $125. Cada panel adicional es +$50 por la malla, la mano de obra y la limpieza de ese panel. Malla rígida de acero que no se oxida, nunca alambre de gallinero, sujeta con clips que se agarran del borde del marco del panel. El método con clips evita perforar los paneles. Consulta los requisitos de tu instalador o proveedor; ellos determinan su propia garantía. 2 a 3 espantapájaros giratorios gratis, más lavado de paneles y limpieza del excremento debajo y alrededor de los paneles. <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué clips y no tornillos">i</button></div>
-          <p class="why" hidden>Las cuadrillas baratas atornillan la malla al marco del panel o al techo. Cada hoyo es una entrada de agua y un motivo para que la compañía solar niegue la garantía. Nuestros clips se agarran del borde interior del marco, aguantan el viento del High Desert y se quitan limpio si un panel necesita servicio.</p>
-          <div class="opt stack" id="pigStory"><span>¿Cuántos pisos tiene la casa? <small>Una casa de dos pisos suma $125 por el acceso y la mano de obra extra.</small></span><div class="seg2 three" data-pstory><button type="button" data-ps="1" aria-pressed="false">1 piso</button><button type="button" data-ps="2" aria-pressed="false">2 pisos</button><button type="button" data-ps="0" aria-pressed="false">No sé</button></div></div>
-          <p class="note" id="pigStoryNote">Elige uno para que el precio sea correcto. Una casa de dos pisos suma $125.</p>
-          <div class="opt stack"><span>Tu paquete</span><div class="seg2 mesh" data-seg="pkg"><button type="button" data-v="0" aria-pressed="true">Control de palomas<small id="pkgA">$450</small></button><button type="button" data-v="1" aria-pressed="false">+ un año de lavados<small id="pkgB"></small></button></div></div>
-          <p class="note" id="pkgNote"></p>
-          <div class="opt"><span>Paneles después de 12 <b class="amt">+$50 cada uno</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button></span></div>
-          <p class="why" hidden>$450 cubre hasta 12 paneles. Cada panel de más es más malla, más clips, más limpieza debajo del arreglo y un panel más que lavar, por eso son $50 por panel. Pon tu cantidad en la casilla de paneles de abajo.</p>
-          <div class="opt"><span>Espantapájaros extra <b class="amt">$50 cada uno</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button></span><div class="stepper" data-step="spin"><button type="button" data-d="-1" aria-label="Menos espantapájaros">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="Más espantapájaros">+</button></div></div>
-          <p class="why" hidden>2 a 3 vienen gratis. El destello de uno cubre el lado del techo al que mira, y la cumbrera lo bloquea, así que los techos grandes o con palomas de los dos lados suelen necesitar uno más. Toca "Mira lo que hacen los espantapájaros" para verlo en 3D.</p>
-          <p class="get"><b>Lo que recibes.</b> Las palomas fuera de debajo de los paneles, nidos y excremento retirados y el área desinfectada para que el olor también se vaya, paneles lavados, malla sujeta al marco sin perforar los paneles; consulta los requisitos de tu proveedor, y garantía de por vida en la mano de obra de la instalación, por escrito.</p>
-          <div class="note" id="pigTerms"><b>Términos de la garantía.</b> Garantía de por vida en la mano de obra para el cliente original. No se transfiere si se vende la propiedad. Si la malla o los clips fallan por cómo los instalamos, reparamos o reemplazamos esa malla y esos clips sin costo. No cubre daños por tormentas ni aves que entren por áreas que no se protegieron desde el principio, y si otra persona quita o cambia algo, se anula para toda la instalación. Es una garantía sobre el trabajo, no una promesa de que las aves nunca regresen. Los mismos términos van por escrito en el PDF de tu cotización.</div>
-          <p class="now"><b>Por qué ahora.</b> Los nidos solo crecen. Mientras más tiempo se queden las palomas, más hay que limpiar, y más excremento queda en el techo y el cableado.</p>
-          <button type="button" class="see3d open3d" data-mode="pig">Mira lo que hacen los espantapájaros en 3D →</button>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="sol">
-          <h3>Limpieza de paneles solares <small>$7 por panel</small></h3>
-          <div class="note" id="solNote"></div>
-          <p class="get"><b>Lo que recibes.</b> Paneles limpios, y si notamos algo visible mientras estamos arriba, como un panel rajado o aves, se lo decimos. $7 por panel, secan sin manchas.</p>
-          <p class="now"><b>Por qué ahora.</b> Aquí casi no llueve para enjuagar los paneles, así que el polvo se acumula y tu producción baja un poco más cada mes.</p>
-          <button type="button" class="see3d open3d" data-mode="sol">Mira tus paneles limpiarse en 3D →</button>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="scr">
-          <h3>Reparación de mosquiteros <small>por mosquitero</small></h3>
-          <div class="screen-options" role="group" aria-label="Compara opciones de mosquiteros"><button type="button" class="screen-option" data-screen-package="0" aria-pressed="false"><b>Malla estándar</b><strong>desde $53.99</strong><span>Marco existente utilizable. Malla estándar para insectos.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="1" aria-pressed="false"><b>Mejora All-Weather</b><strong>desde $64.99</strong><span>Marco existente utilizable. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="2" aria-pressed="false"><b>Mejora completa</b><strong>desde $84.99</strong><span>Marco nuevo a medida. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button></div>
-          <p class="note" data-mesh-fact="0">La malla estándar para insectos prioriza la ventilación y una vista más clara. Reutilizamos un marco adecuado en buen estado.</p>
-          <p class="note" data-mesh-fact="1">La malla de control solar All-Weather es de poliéster recubierto de vinilo, duradera y resistente a mascotas. Aporta sombra y reduce calor solar directo y deslumbramiento; su tejido más denso también cambia la vista, la ventilación y la luz.</p>
-          <div class="opt"><span>Mosquiteros de ventana</span><div class="stepper" data-step="screens"><button type="button" data-d="-1" aria-label="Menos mosquiteros">−</button><output class="num">4</output><button type="button" data-d="1" aria-label="Más mosquiteros">+</button></div></div>
-          <div class="opt"><span>Puertas corredizas de mosquitero <small id="doorNote">Como el doble de un mosquitero de ventana. Es un estimado hasta que Tony vea la puerta.</small></span><div class="stepper" data-step="doors"><button type="button" data-d="-1" aria-label="Menos puertas corredizas">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="Más puertas corredizas">+</button></div></div>
-          <div class="note">El trabajo solo de mosquiteros lleva dos citas: recogida e inspección, y otra confirmada para entrega, instalación y solo la limpieza del acuerdo por escrito. Las fechas solicitadas no son reservas confirmadas. Mínimo de $149 para trabajo solo de mosquiteros; ningún descuento lo baja. Medidas grandes, puertas, fabricación especial y herrajes se evalúan aparte.</div>
-          <div class="note" id="comboNote" hidden></div>
-          <p class="get"><b>Lo que recibes.</b> Aire adentro y bichos afuera, una vista más clara desde adentro, mosquiteros que entran y salen fácil, y el alcance explicado por escrito.</p>
-          <p class="now"><b>Por qué ahora.</b> El sol fuerte dura como nueve meses al año aquí. La malla del constructor se pone quebradiza y el viento la termina.</p>
-          <button type="button" class="see3d open3d" data-mode="scr">Compara las mallas en 3D →</button>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="hw">
-          <h3>Manchas de agua dura <small>desde $12 por vidrio</small></h3>
-          <div class="opt"><span>Vidrios con manchas <button type="button" class="info" data-why aria-expanded="false" aria-label="Por qué este precio">i</button></span><div class="stepper" data-step="panes"><button type="button" data-d="-1" aria-label="Menos vidrios">−</button><output class="num">6</output><button type="button" data-d="1" aria-label="Más vidrios">+</button></div></div>
-          <p class="why" hidden>El agua dura son minerales pegados al vidrio, así que cada vidrio se trata y se pule a mano, uno por uno. Probamos un vidrio gratis primero para que veas el resultado antes de decidir el resto.</p>
-          <div class="note">Se agrega a una limpieza exterior de ventanas, así que la limpieza de ventanas también va en tu cotización. Un vidrio de prueba gratis primero para que veas el resultado antes de pagar el resto.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="roof">
-          <h3>Lavado suave de techo <small>desde $599</small></h3>
-          <div class="note">Parte de nuestro lavado a presión. Lavado suave a baja presión de todo el techo, seguro para teja y tejamanil, desde $599 con el precio final según tu techo. El control de palomas incluye limpiar el excremento y desinfectar las áreas afectadas debajo y alrededor de los paneles. Lavar todo el techo es un servicio aparte. Incluido con el control de palomas.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="pc">
-          <h3>Limpieza de obra nueva <small>desde $249</small></h3>
-          <div class="opt"><span>Tu casa</span><div class="seg2" data-seg="stories"><button type="button" data-v="1" aria-pressed="true">1 piso</button><button type="button" data-v="2" aria-pressed="false">2 pisos</button></div></div>
-          <div class="note">Estuco, pintura, calcomanías y polvo de tablaroca fuera del vidrio nuevo, por dentro y por fuera. $249 un piso, $349 dos pisos. Los vidrios templados se revisan antes de raspar.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="gut">
-          <h3>Limpieza de canaletas <small>se cotiza en el lugar</small></h3>
-          <div class="note">Tony da el precio cuando las ve, normalmente cuando ya está ahí. Verlas no cuesta nada.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="pw">
-          <h3>Lavado a presión <small>se cotiza en el lugar</small></h3>
-          <div class="note">Cocheras, patios y banquetas, según el tamaño del concreto. Tony te da el número antes de empezar.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="tb">
-          <h3>Limpieza de botes de basura <small>se cotiza en el lugar</small></h3>
-          <div class="note">Botes lavados, desodorizados y desinfectados. Tony te da el precio antes de empezar.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="ad">
-          <h3>Quitar calcomanías y vinil <small>desde $129</small></h3>
-          <div class="note">Hasta tres vidrios con calcomanías, letreros o gráficos viejos. Proceso por etapas, y una respuesta directa sobre cualquier vidrio que no se pueda salvar.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="gr">
-          <h3>Quitar grafiti <small>desde $129</small></h3>
-          <div class="note">Una firma en un vidrio. El vidrio rayado empieza con una evaluación de $89, que se descuenta si sigues adelante.</div>
-        </div></template>
-        <template data-tpl><div class="svc" data-body="com">
-          <h3>Locales y edificios <small>$149 por dentro y por fuera</small></h3>
-          <div class="opt"><span class="l"><b>¿Qué vamos a limpiar?</b></span><div class="seg2" data-seg="ctype"><button type="button" data-v="0" aria-pressed="true">Local</button><button type="button" data-v="1" aria-pressed="false">Edificio de oficinas</button></div></div>
-          <div class="cgrp" data-cg="0">
-            <div class="opt"><span class="l"><b>Vidrios</b><small>Cada vidrio que da a la calle, grande o chico</small></span><div class="stepper" data-step="cpanes"><button type="button" data-d="-1" aria-label="Menos vidrios">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más vidrios">+</button></div></div>
-            <div class="opt"><span class="l"><b>Puertas de vidrio</b><small>Cada puerta cuenta como un vidrio</small></span><div class="stepper" data-step="cdoors"><button type="button" data-d="-1" aria-label="Menos puertas">−</button><output class="num">2</output><button type="button" data-d="1" aria-label="Más puertas">+</button></div></div>
-            <div class="opt stack"><span class="l"><b>Frecuencia</b><small>Los contratos fijan el precio. Aplica el mejor descuento, nunca los dos.</small></span><div class="seg2 wrapok" data-seg="csched"><button type="button" data-v="0" aria-pressed="true">Una vez $149</button><button type="button" data-v="1" aria-pressed="false">Mensual 15% menos</button><button type="button" data-v="2" aria-pressed="false">Cada 2 semanas 25% menos</button><button type="button" data-v="3" aria-pressed="false">Contrato trimestral 20% menos</button><button type="button" data-v="4" aria-pressed="false">Contrato anual 40% menos</button></div></div>
-            <div class="opt"><span>Divisiones y espejos interiores <b class="amt">+$50</b></span><button type="button" class="switch" data-sw="cin" role="switch" aria-checked="false" aria-label="Agregar divisiones y espejos interiores"></button></div>
-            <div class="opt"><span class="l"><b>Calcomanías de vinil que cambian <b class="amt">+$10 cada una</b> <button type="button" class="info" data-why aria-expanded="false" aria-label="Qué incluye">i</button></b><small>Horarios, ofertas y promociones que vas cambiando</small></span><div class="stepper" data-step="cstk"><button type="button" data-d="-1" aria-label="Menos calcomanías">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="Más calcomanías">+</button></div></div>
-            <p class="why" hidden>Cuando cambian tus promociones, quitamos la calcomanía vieja limpio y ponemos la nueva derecha mientras estamos ahí, $10 por calcomanía. Tú pones las calcomanías, nosotros el vidrio.</p>
-            <div class="note" id="comNote">$149 fijos por 8 a 10 vidrios por dentro y por fuera, puertas incluidas. Mensual es 15% menos en cada visita, cada 2 semanas 25% menos.</div>
-          </div>
-          <div class="cgrp" data-cg="1" hidden>
-            <div class="opt"><span class="l"><b>Tamaño del edificio</b><small>Miles de pies cuadrados, aproximado está bien</small></span><div class="stepper" data-step="bsq"><button type="button" data-d="-1" aria-label="Edificio más chico">−</button><output class="num">12</output><button type="button" data-d="1" aria-label="Edificio más grande">+</button></div></div>
-            <div class="opt"><span class="l"><b>Pisos</b></span><div class="stepper" data-step="bst"><button type="button" data-d="-1" aria-label="Menos pisos">−</button><output class="num">2</output><button type="button" data-d="1" aria-label="Más pisos">+</button></div></div>
-            <div class="opt"><span class="l"><b>Vidrios</b><small>Cuenta un lado y multiplica, aproximado está bien</small></span><div class="stepper" data-step="bwin"><button type="button" data-d="-4" aria-label="Menos ventanas">−</button><output class="num">48</output><button type="button" data-d="4" aria-label="Más ventanas">+</button></div></div>
-            <div class="note" id="bldgNote">$10 por vidrio por dentro y por fuera en la planta baja, $10 más por vidrio por cada piso hacia arriba. Revisamos cada vidrio por manchas de agua dura y respetamos el polarizado existente. Recorrido gratis, precio firme por escrito.</div>
-          </div>
-          <div class="note"><a href="commercial-window-cleaning.html">Ver planes para locales (en inglés) →</a> · <button type="button" class="linkish open3d" data-mode="com">Verlo en 3D</button></div>
-        </div></template>
-        <div class="svc" id="panelRow">
-          <div class="opt"><span class="l"><b>Paneles solares en tu techo</b><small>Cuéntalos desde la calle, aproximado está bien</small></span><div class="stepper" data-step="panels"><button type="button" data-d="-1" aria-label="Menos paneles">−</button><output class="num">16</output><button type="button" data-d="1" aria-label="Más paneles">+</button></div><b class="ptotal num" hidden></b></div>
-          <div class="opt"><span class="l"><b>Secciones</b><small>¿Paneles en grupos separados? Cuenta cada uno.</small></span><div class="seg2" data-seg="arrays"><button type="button" data-v="1" aria-pressed="true">1</button><button type="button" data-v="2" aria-pressed="false">2</button><button type="button" data-v="3" aria-pressed="false">3</button></div></div>
-          <div class="opt" data-sec="0" hidden><span>Sección 1</span><div class="stepper" data-step="arr0"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 1">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 1">+</button></div></div>
-          <div class="opt" data-sec="1" hidden><span>Sección 2</span><div class="stepper" data-step="arr1"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 2">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 2">+</button></div></div>
-          <div class="opt" data-sec="2" hidden><span>Sección 3</span><div class="stepper" data-step="arr2"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 3">−</button><output class="num">6</output><button type="button" data-d="1" aria-label="Más paneles en la sección 3">+</button></div></div>
-        </div>
-        <div class="myhome" id="myHome" hidden></div>
-        <div class="often" id="often" hidden></div>
-      </div>
-      <div class="card ticket" aria-live="polite">
-        <div id="tlines"></div>
-        <div class="ttotal"><span>Total</span><b id="ttotal" class="num">$149</b></div>
-        <p class="from-note" id="fromNote" hidden>Los trabajos especiales son un precio inicial. Tony lo confirma por escrito antes de empezar.</p>
-        <p class="from-note" id="farNote" hidden></p>
-        <p class="proof" id="proof" hidden></p>
-        <div class="guar"><span aria-hidden="true">✓</span><span><b>Satisfacción garantizada.</b> Si algo no queda bien, lo repetimos antes de irnos.</span></div>
-        <ul class="trust"><li>Inspección gratis</li><li>Sin cargo por viaje</li><li>Enlace de pago o Zelle</li></ul>
-        <a class="qb qb-gold" id="dayGo" href="#day" style="width:100%;margin-top:14px">Elige un día, ahorra 10% →</a>
-        <button type="button" class="qreset" id="resetQ">Empezar de nuevo</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PASO 2: día y plan -->
-<section class="tq-step" id="day" data-nosnippet>
-  <div class="wrap">
-    <div class="step-head"><span class="step-n">2</span><h2>Elige un día</h2></div>
-    <p class="early" id="early"><span class="early-badge">Reserva en línea</span><span id="earlyTxt">Reserva en nuestro sitio y ahorra un 10% extra. Elige tu día abajo.</span></p>
-    <div class="pickgrid">
-      <div class="card">
-        <div class="lab">Día</div>
-        <div class="days" id="days" role="group" aria-label="Elige un día"></div>
-        <label class="other-date"><span>O elige otra fecha</span><input type="date" id="dateIn"></label>
-        <div class="lab" style="margin-top:14px">Horario</div>
-        <div class="seg2 wrapok" data-seg="time"><button type="button" data-v="0" aria-pressed="false">Mañana</button><button type="button" data-v="1" aria-pressed="false">Tarde</button><button type="button" data-v="2" aria-pressed="false">Prefiero fin de semana</button></div>
-        <p class="small strong" id="dayPicked"></p>
-        <p class="small" id="dayRule">Tony confirma por mensaje de texto, y si tu día se llena te ofrece el más cercano.</p>
-<div id="screenReturn" class="screen-return" hidden><h3>Visita 2 — Entrega, instalación y limpieza acordada</h3><p>Solicita otra cita de regreso o deja que Tony la confirme después de inspeccionar. Solo se incluye la limpieza del acuerdo por escrito. La recogida no es un trabajo terminado.</p><label for="screenReturnMode">Fecha de regreso</label><select id="screenReturnMode"><option value="confirm">Tony confirma el regreso después de inspeccionar</option><option value="request">Quiero solicitar una fecha de regreso</option></select><div id="screenReturnFields" hidden><label for="screenReturnDate">Fecha de regreso preferida</label><input id="screenReturnDate" type="date" aria-describedby="screenReturnError"><label for="screenReturnPart">Horario de regreso preferido</label><select id="screenReturnPart"><option value="">Sin preferencia</option><option value="morning">Mañana</option><option value="afternoon">Tarde</option></select></div><p id="screenReturnError" class="err" role="alert"></p><p id="screenReturnSummary" class="small" aria-live="polite"></p></div>
-      </div>
-      <div class="card plan">
-        <div class="lab" id="planLab">Cada cuánto</div>
-        <div class="plans" data-seg="plan"><button type="button" data-v="0" aria-pressed="true"><b>Una vez</b><small>solo esta visita</small></button><button type="button" data-v="1" aria-pressed="false"><b>Una vez al año</b><small></small></button><button type="button" data-v="2" aria-pressed="false"><b>Dos veces al año</b><small></small></button><button type="button" data-v="3" aria-pressed="false"><b>Cada 3 meses</b><i>Mejor valor</i><small></small></button></div>
-        <p class="small strong" id="planWhy"></p>
-        <p class="small" id="planNote">El polvo del desierto y el agua dura vuelven, igual que crece el pasto. Con un plan, Tony te manda un mensaje antes de cada visita, para que no tengas que acordarte.</p>
-        <p class="small strong" id="planNone" hidden></p>
-        <div class="planbox" id="planbox" hidden><div class="lab">Tu plan</div><ol class="visits" id="visits"></ol><p class="plantot" id="plantot"></p></div>
-        <button type="button" class="qb qb-ghost qb-sm pdf" id="pdfBtn">Descargar mi cotización (PDF)</button>
-        <p class="small">El PDF trae por escrito los términos y garantías de tu cotización, para que los leas antes de reservar. El PDF va en inglés.</p>
-        <p class="small" id="pdfNote" aria-live="polite"></p>
-      </div>
-    </div>
-    <div class="card wait">
-      <div class="lab">Qué sigue</div>
-      <div class="reasons">
-        <p><b>Alcance y precio por escrito.</b> Tony confirma las condiciones y el trabajo acordado antes de empezar.</p>
-        <p><b>Tony confirma por mensaje.</b> Trae todo, se acomoda a tu día, y tú no mueves un dedo.</p>
-        <p><b>Solicitar una cotización no requiere pago.</b> El depósito acordado y los términos de pago se confirman por escrito.</p>
-      </div>
-      <div id="waitWrap">
-        <div class="lab" style="margin-top:14px">Qué pasa si esperas</div>
-        <div class="seg2 wrapok" data-seg="wait"><button type="button" data-v="0" aria-pressed="true">Reservar ahora</button><button type="button" data-v="1" aria-pressed="false">3 meses</button><button type="button" data-v="2" aria-pressed="false">6 meses</button><button type="button" data-v="3" aria-pressed="false">Un año</button></div>
-        <ul class="waitlist" id="waitList"></ul>
-        <p class="small strong" id="waitNote"></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PASO 3: enviar -->
-<section class="tq-step" id="tq-send" data-nosnippet>
-  <div class="wrap">
-    <div class="step-head"><span class="step-n">3</span><h2>Envíala como prefieras</h2></div>
-    <p class="step-sub">No pagas nada ahora. Pon tus datos una vez y luego manda un texto, un correo o el formulario. Todo lo que Tony necesita ya está escrito. El mensaje va en inglés para que Tony lo lea rápido; puedes escribirle en español y él te contesta.</p>
-    <form class="send" id="sendForm" novalidate>
-      <div class="card">
-        <div class="fld"><label for="fname">Tu nombre</label><input id="fname" name="name" autocomplete="name" maxlength="80" placeholder="María López"></div>
-        <div class="fld"><label for="fstreet">Dirección</label><input id="fstreet" name="street" autocomplete="street-address" maxlength="140" placeholder="Calle, ciudad"></div>
-        <div class="fld"><label for="fphone">Celular</label><input id="fphone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" maxlength="20" placeholder="760-555-0123" aria-describedby="fphoneErr"><div class="err fld-err" id="fphoneErr" role="alert"></div></div>
-        <div class="fld"><label for="femail">Correo <small>opcional</small></label><input id="femail" name="email" type="email" inputmode="email" autocomplete="email" maxlength="120" placeholder="tu@correo.com"></div>
-        <div class="fld"><label for="fnotes">¿Algo que debamos saber? <small>opcional</small></label><textarea id="fnotes" name="notes" maxlength="400" rows="2" placeholder="Código del portón, perros en el patio, mejor hora para llamar"></textarea></div>
-        <div class="err" id="ferr" role="alert"></div>
-        <div class="hp" aria-hidden="true"><label for="hp">Deja esto vacío</label><input id="hp" name="company" tabindex="-1" autocomplete="off"></div>
-        <div class="lab" style="margin-top:14px">¿Cómo la quieres mandar?</div>
-        <div class="ways">
-          <a class="way" id="smsA" href="sms:+17145590300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg><b>Texto a Tony</b><span>Abre tus mensajes, ya escrito</span></a>
-          <a class="way" id="mailA" href="mailto:twindowclean@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><b>Correo a Tony</b><span>Abre tu correo, ya escrito</span></a>
-          <button type="submit" class="way" id="sendBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg><b>Mandar el formulario</b><span>Directo a Tony desde aquí</span></button>
-        </div>
-        <p class="small" id="wayNote">El texto funciona desde un celular. En computadora, el correo o el formulario es lo más fácil.</p>
-        <div id="sent" class="sent" hidden>
-          <b>Enviado. Tony ya tiene tu cotización.</b>
-          <p>Te contesta por texto desde el 714-559-0300. Guarda el número para que sepas que es él.</p>
-          <div class="prev" id="prevNote" hidden>Solo vista previa, no se envió nada. En el sitio real esto llega a la bandeja de Tony con todo el detalle.</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="msg-h">Lo que recibe Tony</div>
-        <div class="msg" id="msg"></div>
-        <div class="acts">
-          <button type="button" class="qb qb-ghost qb-sm" id="copyBtn">Copiar</button>
-          <button type="button" class="qb qb-ghost qb-sm" id="shareBtn">Guardar o compartir en PDF</button>
-        </div>
-        <div class="toast" id="toast" role="status"></div>
-        <div class="tip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span>¿Vas a mandar texto? Agrega una foto de tu techo o tus ventanas. Tony puede medir el trabajo antes de manejar hasta allá.</span></div>
-        <div class="numline"><span>O llama al</span><b>714-559-0300</b></div>
-      </div>
-    </form>
-    <details class="signs" id="signs">
-      <summary>Cómo saber que ya toca</summary>
-      <ul>
-        <li><b>Ventanas.</b> Manchas cuando el sol pega en el vidrio, mosquiteros que se ven grises, o más de 6 meses desde la última limpieza.</li>
-        <li><b>Paneles solares.</b> Sin lavado en los últimos 6 meses, o un día soleado en tu app solar que marca menos que antes.</li>
-        <li><b>Palomas.</b> Aves en el techo, excremento en la teja o la cochera, arrullos debajo de los paneles, o un olor fuerte a amoniaco con el calor. No se van solas.</li>
-        <li><b>Mosquiteros.</b> Rasgaduras, hoyos, malla que se abomba del marco o se deshace al tocarla.</li>
-      </ul>
-    </details>
-  </div>
-</section>
-
-<!-- ZIP -->
-<section class="tq-step zipsec" id="zip">
-  <div class="wrap zip">
-    <div>
-      <h2>¿Llegan hasta mi casa?</h2>
-      <p class="step-sub">Escribe tu código postal. Lo sabes en un segundo.</p>
-    </div>
-    <div>
-      <div class="zipbox"><input id="zipIn" inputmode="numeric" maxlength="5" autocomplete="postal-code" placeholder="92345" aria-label="Tu código postal"></div>
-      <div class="zres" id="zres" aria-live="polite"><b>Nuestra zona de siempre:</b> Victorville, Hesperia, Apple Valley, Adelanto, Oak Hills, Phelan, Fontana, Helendale, Silver Lakes y Baldy Mesa. Más pueblos con cita.</div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D -->
-<section class="tq-step" id="three">
-  <div class="wrap">
-    <div class="sec-h"><h2>Velo en tu casa en 3D</h2><p>Elige tu casa. Mira cómo se hace el trabajo.</p></div>
-    <div class="t3grid">
-      <div class="p3">
-        <button type="button" class="p3-img open3d" data-mode="tour" aria-label="Abrir la vista 3D"><img src="assets/quote/home-16x10.webp" alt="Modelo 3D de una casa del High Desert con ventanas limpias, paneles solares lavados y malla contra palomas" width="960" height="600" loading="lazy" decoding="async"><span class="r3d-go">Abrir la vista 3D</span></button>
-        <div class="p3-btns">
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="win">Ventanas</button>
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="sol">Solar</button>
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="scr">Mosquiteros</button>
-          <button type="button" class="qb qb-ghost qb-sm open3d" data-mode="pig">Palomas</button>
-        </div>
-        <p class="p3-s">¿Casa antigua, prefabricada o grande? Elige el estilo más parecido y mira el trabajo en una casa como la tuya.</p>
-      </div>
-      <div class="card sci">
-        <h3>Qué tiene de diferente nuestra limpieza de ventanas</h3>
-        <ul class="ticks">
-          <li><b>Los mosquiteros se quitan y se tallan</b>, y luego vuelven a su lugar.</li>
-          <li><b>Rieles y repisas limpios.</b> Incluidos en el precio, no son extras.</li>
-          <li><b>Acabado con agua purificada</b>, para que el vidrio seque claro y sin residuo.</li>
-          <li><b>Por dentro, todas las ventanas por $49.</b> La mayoría limpia por fuera y deja un charco de lodo en el riel. Nosotros aspiramos y secamos cada riel.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /tq:steps -->
+    <div id="rq-screen-return" hidden><h3>Solo mosquiteros: dos citas</h3><p>La visita 1 es recogida e inspección. La visita 2 es devolución, instalación y solo la limpieza acordada. Los servicios combinados se organizan según tu trabajo.</p>
+      <label class="request-field" for="rq-return-mode">Organización de devolución<select id="rq-return-mode" name="screen_return_mode"><option value="confirm">Tony confirma después de la inspección</option><option value="request">Solicitar fecha de devolución</option></select></label>
+      <div id="rq-return-fields" class="request-grid" hidden><label class="request-field" for="rq-screen_return_date">Fecha preferida de devolución<input id="rq-screen_return_date" name="screen_return_date" type="date" ></label><label class="request-field" for="rq-return-part">Horario preferido de devolución<select id="rq-return-part" name="screen_return_part"><option value="flexible">Flexible</option><option value="morning">Mañana</option><option value="afternoon">Tarde</option></select></label></div>
+    </div></fieldset>
+    <label class="request-field" for="rq-preferred-contact">¿Cómo prefieres que Tony responda?<select id="rq-preferred-contact" name="preferred_contact"><option value="text">Mensaje de texto</option><option value="phone">Llamada</option><option value="email">Correo electrónico</option></select></label>
+    <details class="request-review"><summary>Revisar tu solicitud</summary><pre id="rq-summary"></pre><p>Esta es una solicitud de servicio, no un presupuesto aprobado ni una cita confirmada. Tony confirma el trabajo, precio, depósitos y términos por escrito.</p></details>
+    <p class="request-offer">La oferta existente de 10% en la primera visita por internet depende de elegibilidad y confirmación de Tony. No se combina con descuentos comerciales ni reduce el mínimo de $149 para solo mosquiteros.</p>
+    <label class="request-consent"><input type="checkbox" id="rq-consent" name="consent_callback" value="yes"><span>Guardar mi solicitud para que Tony me contacte sobre este proyecto. Los botones de texto y correo también la guardan antes de abrir un borrador cuando mis datos están completos.</span></label>
+    <div class="request-trap" aria-hidden="true"><label for="rq-company">Leave this empty</label><input id="rq-company" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+    <p id="rq-error" class="request-error" role="alert" tabindex="-1"></p><p id="rq-status" class="request-status" role="status"></p>
+    <div class="request-actions"><button type="submit" id="rq-send">Enviar solicitud</button><button type="button" id="rq-text">Texto a Tony</button><button type="button" id="rq-email-action">Correo a Tony</button></div>
+    <a id="rq-open-draft" hidden>Abrir borrador sin guardar solicitud</a>
+    <p class="request-hint">Texto y correo abren tu propia aplicación. Aún debes enviar el borrador. Puedes agregar fotos del proyecto allí. Aquí no se confirma ninguna cita.</p>
+    <p class="request-hint">Service is available 24/7 by arrangement. Tony returns calls and requests as available; live telephone answering is not guaranteed.</p>
+    <p class="request-contact">¿Prefieres hablar? <a href="tel:7145590300">714-559-0300</a> · <a href="mailto:twindowclean@gmail.com">twindowclean@gmail.com</a> · <a href="privacy.html">Privacidad</a></p>
+    <noscript><p>Llama o escribe directamente a Tony. El formulario necesita JavaScript para verificar la recepción.</p></noscript>
+  </form></div></section>
+<!-- /service request -->
 </div>
 
-  
+
 <!-- F2: verified service scope, 2026-10-27 -->
 <section class="section faq" id="service-scope"><div class="container narrow"><h2 class="section-title">Vidrio limpio con cuidado y opciones claras</h2><p class="lead">Tallamos el vidrio con cuidado y revisamos el acabado antes de dar por terminado el servicio. El alcance indicado para la limpieza exterior incluye mosquiteros, rieles y alféizares; la limpieza interior es una opción adicional que aparece por separado en la cotización. Las manchas de agua dura o la restauración se revisan y cotizan aparte. Cuéntanos sobre el acceso y cualquier vidrio especial para definir bien el trabajo.</p><details class="faq-item"><summary>¿Se incluyen las ventanas por dentro?</summary><p>El vidrio interior es una opción adicional que aparece por separado en la cotización. Revisa qué vidrios y áreas se incluyen antes de confirmar el trabajo.</p></details><details class="faq-item"><summary>¿La limpieza regular incluye restauración de agua dura?</summary><p>La limpieza de rutina y la restauración tienen alcances distintos. Las manchas minerales, el vidrio dañado y los trabajos especiales se revisan y cotizan aparte. Los precios ya acordados con clientes no se cambian automáticamente.</p></details><p><a href="reparacion-de-mosquiteros.html">Mosquiteros</a> · <a href="limpieza-de-paneles-solares.html">Paneles solares</a></p><p><a class="btn btn-primary" href="#quote">Revisa las opciones y pide tu cotización</a></p><p>Tony confirma el día solicitado después de revisar la disponibilidad.</p></div></section>
 <section class="section">
     <div class="container">
-      <div class="section-head reveal">
+      <div class="section-head">
         <span class="kicker">Incluido</span>
         <h2 class="section-title">Lo que trae cada limpieza</h2>
       </div>
-      <div class="hood-grid reveal">
+      <div class="hood-grid">
         <div class="hood">
           <h3>Mosquiteros</h3>
           <p>Se quitan, se tallan y se enjuagan, y vuelven a su lugar. Un mosquitero gris tapa más luz de lo que parece, y la tierra se regresa al vidrio si no se limpia.</p>
@@ -710,11 +412,11 @@
 
   <section class="section">
     <div class="container narrow">
-      <div class="section-head reveal">
+      <div class="section-head">
         <span class="kicker">Por dentro</span>
         <h2 class="section-title">Las ventanas de adentro, por $49</h2>
       </div>
-      <div class="reveal">
+      <div class="">
         <p class="lead" style="text-align:left;margin-bottom:1.15rem">Por dentro, todas las ventanas de la casa por $49 en la misma visita, no un precio por ventana. Incluye el vidrio de adentro, los marcos y los rieles aspirados y secados, que es lo que hace que las ventanas vuelvan a correr como cuando la casa era nueva. Zapatos cubiertos, telas debajo de cada ventana, y los muebles se mueven y se regresan.</p>
       </div>
     </div>
@@ -722,11 +424,11 @@
 
   <section class="section">
     <div class="container narrow">
-      <div class="section-head reveal">
+      <div class="section-head">
         <span class="kicker">Agua dura</span>
         <h2 class="section-title">Las manchas blancas que no salen</h2>
       </div>
-      <div class="reveal">
+      <div class="">
         <p class="lead" style="text-align:left;margin-bottom:1.15rem">Si tienes una banda blanca o manchas redondas en los vidrios que dan al pasto, eso es agua dura de los aspersores, minerales pegados al vidrio. No sale con una limpieza normal. Se trata vidrio por vidrio, desde $12 cada uno, y probamos un vidrio gratis primero para que veas el resultado antes de pagar el resto. También te decimos qué aspersor está mojando el vidrio, para que no regrese.</p>
       </div>
     </div>
@@ -734,11 +436,11 @@
 
   <section class="section">
     <div class="container narrow">
-      <div class="section-head reveal">
+      <div class="section-head">
         <span class="kicker">Precio</span>
         <h2 class="section-title">Cuánto cuesta</h2>
       </div>
-      <div class="reveal">
+      <div class="">
         <p class="lead" style="text-align:left;margin-bottom:1.15rem">$149 un piso, $249 dos pisos, por fuera, con mosquiteros, rieles y repisas. Más de 12 ventanas en un piso o 20 en dos pisos son $39 fijos más. Por dentro, toda la casa, $49. Casas grandes o de lago se cotizan después de verlas, normalmente $499 a $599 por dentro y por fuera, confirmado por escrito.</p>
         <p class="lead" style="text-align:left;margin-bottom:1.15rem">Si reservas en nuestro sitio, la primera visita tiene 10% de descuento. Con un plan de dos veces al año, cada visita después de la primera tiene 15% de descuento; cada 3 meses, 25%. Tony te manda un mensaje antes de cada visita y puedes moverla o saltarla.</p>
       </div>
@@ -758,11 +460,11 @@
 
   <section id="faq" class="section faq">
     <div class="container narrow">
-      <div class="section-head reveal">
+      <div class="section-head">
         <span class="kicker">Preguntas</span>
         <h2 class="section-title">Preguntas sobre ventanas</h2>
       </div>
-      <div class="reveal">
+      <div class="">
         <details class="faq-item">
           <summary>¿Cuánto cuesta limpiar las ventanas?</summary>
           <p>$149 por fuera en una casa de un piso y $249 en dos pisos, con mosquiteros, rieles y repisas incluidos. Por dentro, todas las ventanas por $49 más en la misma visita.</p>
@@ -837,140 +539,6 @@
 
   <script src="assets/tags.js" defer></script>
   <script src="main.js" defer></script>
-<!-- tq:tail -->
-<div class="tq" data-nosnippet>
-<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ovT" hidden data-mode="home">
-  <div class="ov-top">
-    <b id="ovT">Tu casa en 3D</b>
-    <span class="ov-hint">Arrastra para girar · pellizca o + para acercar</span>
-    <button type="button" class="ov-x" id="ovX" aria-label="Cerrar la vista 3D">✕</button>
-  </div>
-  <div class="ov-tabs" role="tablist" aria-label="Qué mostrar">
-    <button type="button" role="tab" data-hmode="home" aria-selected="true">Mi casa</button>
-    <button type="button" role="tab" data-hmode="win" aria-selected="false">Ventanas</button>
-    <button type="button" role="tab" data-hmode="sol" aria-selected="false">Solar</button>
-    <button type="button" role="tab" data-hmode="scr" aria-selected="false">Mosquiteros</button>
-    <button type="button" role="tab" data-hmode="pig" aria-selected="false">Palomas</button>
-    <button type="button" role="tab" data-hmode="com" aria-selected="false">Local</button>
-  </div>
-  <div class="ov-stage" id="stage">
-    <div class="ov-load" id="ovLoad">Cargando 3D…</div>
-    <div class="callout" id="ocall" hidden><i></i><span></span></div>
-    <div class="zoom" role="group" aria-label="Zoom">
-      <button type="button" data-zoom="1" aria-label="Acercar">+</button>
-      <button type="button" data-zoom="-1" aria-label="Alejar">−</button>
-      <button type="button" data-zoom="0" aria-label="Regresar la vista">⟲</button>
-    </div>
-    <button type="button" class="wx" id="wxChip" aria-label="Cambiar el clima en la vista 3D">Hoy</button>
-    <div class="try" id="try" hidden></div>
-    <div class="ov-fade" id="ovFade"></div>
-    <div class="ov-msg" id="ovMsg" hidden><b class="mtag"><img src="assets/quote/tony-192.jpg" alt="" width="28" height="28" loading="lazy" decoding="async">Tony</b><div class="mtxt" id="ovMsgT" aria-live="polite"></div><div class="askp" id="askp" hidden></div><div class="mnav" id="ovNav" hidden><button type="button" data-hact="prev" aria-label="Un paso atrás">‹ Atrás</button><span id="ovStep"></span><button type="button" class="askb" id="askb" data-hact="ask" hidden>Pregúntale a Tony</button><button type="button" data-hact="next" class="nx">Siguiente ›</button></div></div>
-  </div>
-  <div class="ov-panel">
-    <button type="button" class="ov-grab" id="ovGrab" aria-expanded="true"><span>Personalizar mi casa</span><i aria-hidden="true"></i></button>
-    <template data-tpl>
-    <div class="ops" data-for="home">
-      <div class="otabs" role="tablist" aria-label="Personalizar"><button type="button" role="tab" data-otab="home" aria-selected="true">Casa</button><button type="button" role="tab" data-otab="colors" aria-selected="false">Colores</button><button type="button" role="tab" data-otab="solar" aria-selected="false">Solar</button><button type="button" role="tab" data-otab="street" aria-selected="false">Calle</button></div>
-      <div class="og" data-og="home">
-        <div class="orow col"><span>Estilo de casa</span><div class="seg2 wrapok styles" data-hseg="style"><button type="button" data-v="0" aria-pressed="true">Nueva</button><button type="button" data-v="1" aria-pressed="false">Rancho</button><button type="button" data-v="5" aria-pressed="false">Casa más antigua</button><button type="button" data-v="2" aria-pressed="false">Clásica</button><button type="button" data-v="3" aria-pressed="false">Grande de dos pisos</button><button type="button" data-v="6" aria-pressed="false">Casa prefabricada</button><button type="button" data-v="4" aria-pressed="false">Cabaña</button></div></div>
-        <div class="orow"><span>Pisos</span><div class="seg2" data-seg="stories"><button type="button" data-v="1" aria-pressed="true">1 piso</button><button type="button" data-v="2" aria-pressed="false">2 pisos</button></div></div>
-        <div class="orow"><span>Techo</span><div class="seg2" data-hseg="roof"><button type="button" data-v="0" aria-pressed="true">Teja S</button><button type="button" data-v="1" aria-pressed="false">Teja plana</button><button type="button" data-v="2" aria-pressed="false">Tejamanil</button></div></div>
-        <div class="orow"><span>Cuadrícula en ventanas</span><button type="button" class="switch" data-hsw="grids" role="switch" aria-checked="false" aria-label="Cuadrícula en ventanas"></button></div>
-        <div class="orow"><span>Más ventanas</span><button type="button" class="switch" data-sw="more" role="switch" aria-checked="false" aria-label="Más ventanas"></button></div>
-        <p class="onote">Elige el estilo más parecido al tuyo y el trabajo se ve en una casa como la tuya.</p>
-      </div>
-      <div class="og" data-og="colors" hidden>
-        <div class="orow"><span>Color de techo</span><div class="sw" data-hseg="rc"><button type="button" data-v="0" aria-pressed="true" aria-label="Terracota" style="background:#a9573a"></button><button type="button" data-v="1" aria-pressed="false" aria-label="Café" style="background:#6e5140"></button><button type="button" data-v="2" aria-pressed="false" aria-label="Gris oscuro" style="background:#46484c"></button><button type="button" data-v="3" aria-pressed="false" aria-label="Arena" style="background:#c2a67c"></button></div></div>
-        <div class="orow"><span>Paredes</span><div class="sw" data-hseg="wc"><button type="button" data-v="0" aria-pressed="true" aria-label="Arena del desierto" style="background:#e3d5bb"></button><button type="button" data-v="1" aria-pressed="false" aria-label="Blanco" style="background:#f1eee8"></button><button type="button" data-v="2" aria-pressed="false" aria-label="Gris cálido" style="background:#c9c5bd"></button><button type="button" data-v="3" aria-pressed="false" aria-label="Adobe" style="background:#d2ae8c"></button></div></div>
-        <div class="orow"><span>Marcos</span><div class="sw" data-hseg="tc"><button type="button" data-v="0" aria-pressed="true" aria-label="Marcos blancos" style="background:#f5f3ee"></button><button type="button" data-v="1" aria-pressed="false" aria-label="Marcos crema" style="background:#e9dcc0"></button><button type="button" data-v="2" aria-pressed="false" aria-label="Marcos bronce" style="background:#5b4a3b"></button></div></div>
-      </div>
-      <div class="og" data-og="solar" hidden>
-        <div class="orow"><span>Tus paneles</span><div class="stepper" data-step="panels"><button type="button" data-d="-1" aria-label="Menos paneles">−</button><output class="num">16</output><button type="button" data-d="1" aria-label="Más paneles">+</button></div><b class="ptotal num" hidden></b></div>
-        <div class="orow"><span>Secciones</span><div class="seg2" data-seg="arrays"><button type="button" data-v="1" aria-pressed="true">1</button><button type="button" data-v="2" aria-pressed="false">2</button><button type="button" data-v="3" aria-pressed="false">3</button></div></div>
-        <div class="orow" data-sec="0" hidden><span>Sección 1</span><div class="stepper" data-step="arr0"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 1">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 1">+</button></div></div>
-        <div class="orow" data-sec="1" hidden><span>Sección 2</span><div class="stepper" data-step="arr1"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 2">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 2">+</button></div></div>
-        <div class="orow" data-sec="2" hidden><span>Sección 3</span><div class="stepper" data-step="arr2"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 3">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 3">+</button></div></div>
-      </div>
-      <div class="og" data-og="street" hidden>
-        <div class="orow col"><span>Vecindario</span><div class="seg2 wrapok" data-hseg="hood"><button type="button" data-v="0" aria-pressed="false">Patios de desierto</button><button type="button" data-v="1" aria-pressed="true">Pasto</button><button type="button" data-v="3" aria-pressed="false">Lago</button><button type="button" data-v="2" aria-pressed="false">Terreno grande</button><button type="button" data-v="4" aria-pressed="false">Montaña</button></div></div>
-      </div>
-      <button type="button" class="replay quiet" data-hact="obd">Empezar de nuevo con mi casa y mis problemas</button>
-    </div>
-    <div class="ops" data-for="win" hidden>
-      <div class="orow"><span>Vista</span><div class="seg2" data-hseg="view"><button type="button" data-v="0" aria-pressed="true">Por fuera</button><button type="button" data-v="1" aria-pressed="false">Por dentro</button></div></div>
-      <div class="orow"><span>Ventanas por dentro <b class="amt">+$49</b></span><button type="button" class="switch" data-sw="inside" role="switch" aria-checked="false" aria-label="Agregar ventanas por dentro"></button></div>
-      <div class="orow"><span>Tu casa</span><div class="seg2" data-seg="stories"><button type="button" data-v="1" aria-pressed="true">1 piso</button><button type="button" data-v="2" aria-pressed="false">2 pisos</button></div></div>
-      <div class="orow"><span>Como cuántas ventanas</span><div class="stepper" data-step="wins"><button type="button" data-d="-1" aria-label="Menos ventanas">−</button><output class="num">12</output><button type="button" data-d="1" aria-label="Más ventanas">+</button></div></div>
-      <button type="button" class="replay" data-hact="replay">▶ Verlo otra vez</button>
-    </div>
-    <div class="ops" data-for="sol" hidden>
-      <div class="orow"><span>Tus paneles</span><div class="stepper" data-step="panels"><button type="button" data-d="-1" aria-label="Menos paneles">−</button><output class="num">16</output><button type="button" data-d="1" aria-label="Más paneles">+</button></div><b class="ptotal num" hidden></b></div>
-      <div class="orow"><span>Secciones</span><div class="seg2" data-seg="arrays"><button type="button" data-v="1" aria-pressed="true">1</button><button type="button" data-v="2" aria-pressed="false">2</button><button type="button" data-v="3" aria-pressed="false">3</button></div></div>
-      <div class="orow" data-sec="0" hidden><span>Sección 1</span><div class="stepper" data-step="arr0"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 1">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 1">+</button></div></div>
-      <div class="orow" data-sec="1" hidden><span>Sección 2</span><div class="stepper" data-step="arr1"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 2">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 2">+</button></div></div>
-      <div class="orow" data-sec="2" hidden><span>Sección 3</span><div class="stepper" data-step="arr2"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 3">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 3">+</button></div></div>
-      <div class="orow" data-spinrow><span>Espantapájaros <b class="amt">$50 cada uno</b></span><div class="stepper" data-step="spin"><button type="button" data-d="-1" aria-label="Menos espantapájaros">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="Más espantapájaros">+</button></div></div>
-      <button type="button" class="replay" data-hact="replay">▶ Verlo otra vez</button>
-    </div>
-    <div class="ops" data-for="scr" hidden>
-      <div class="screen-options" role="group" aria-label="Compara opciones de mosquiteros"><button type="button" class="screen-option" data-screen-package="0" aria-pressed="false"><b>Malla estándar</b><strong>desde $53.99</strong><span>Marco existente utilizable. Malla estándar para insectos.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="1" aria-pressed="false"><b>Mejora All-Weather</b><strong>desde $64.99</strong><span>Marco existente utilizable. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button><button type="button" class="screen-option" data-screen-package="2" aria-pressed="false"><b>Mejora completa</b><strong>desde $84.99</strong><span>Marco nuevo a medida. Malla de control solar All-Weather.</span><small>Elegir para cotizar</small></button></div>
-      <p class="onote" data-mesh-fact="0">La misma clase de malla que usó el constructor, bien tensada. La vista más clara, buen paso de aire, bien para ventanas con sombra.</p>
-      <p class="onote" data-mesh-fact="1">La malla de control solar All-Weather aporta sombra con poliéster recubierto de vinilo, resistente a mascotas. Su tejido más denso cambia la vista, la ventilación y la luz.</p>
-      <div class="orow"><span>Mosquiteros</span><div class="stepper" data-step="screens"><button type="button" data-d="-1" aria-label="Menos mosquiteros">−</button><output class="num">4</output><button type="button" data-d="1" aria-label="Más mosquiteros">+</button></div></div>
-      <button type="button" class="replay" data-hact="replay">▶ Verlo otra vez</button>
-    </div>
-    <div class="ops" data-for="com" hidden>
-      <div class="orow"><span>Limpieza</span><div class="seg2" data-seg="ctype"><button type="button" data-v="0" aria-pressed="true">Local</button><button type="button" data-v="1" aria-pressed="false">Edificio de oficinas</button></div></div>
-      <div class="cgrp" data-cg="0">
-        <div class="otabs" role="tablist" aria-label="Arma tu local"><button type="button" role="tab" data-otab="look" aria-selected="true">Mi local</button><button type="button" role="tab" data-otab="glass" aria-selected="false">Vidrio</button><button type="button" role="tab" data-otab="plan" aria-selected="false">Frecuencia</button></div>
-        <div class="og" data-og="look">
-          <div class="orow col"><span>Tipo de local</span><div class="seg2 wrapok" data-hseg="cst"><button type="button" data-v="0" aria-pressed="true">Plaza</button><button type="button" data-v="1" aria-pressed="false">Café con patio</button><button type="button" data-v="2" aria-pressed="false">Frente de vidrio alto</button><button type="button" data-v="3" aria-pressed="false">Oficina independiente</button><button type="button" data-v="4" aria-pressed="false">Taller mecánico</button></div></div>
-          <div class="orow"><label for="cname">Nombre en el letrero</label><input id="cname" class="cname" type="text" maxlength="18" placeholder="Tu negocio" autocomplete="organization"></div>
-          <div class="orow"><span>Paredes</span><div class="sw" data-hseg="cwc"><button type="button" data-v="0" aria-pressed="true" aria-label="Gris cálido" style="background:#c9c5bd"></button><button type="button" data-v="1" aria-pressed="false" aria-label="Arena" style="background:#e3d5bb"></button><button type="button" data-v="2" aria-pressed="false" aria-label="Piedra" style="background:#bfb29c"></button><button type="button" data-v="3" aria-pressed="false" aria-label="Adobe" style="background:#cfae8a"></button></div></div>
-          <div class="orow"><span>Color del letrero</span><div class="sw" data-hseg="cac"><button type="button" data-v="0" aria-pressed="true" aria-label="Azul marino" style="background:#103050"></button><button type="button" data-v="1" aria-pressed="false" aria-label="Verde" style="background:#1b7a4c"></button><button type="button" data-v="2" aria-pressed="false" aria-label="Rojo" style="background:#9a2a22"></button><button type="button" data-v="3" aria-pressed="false" aria-label="Azul" style="background:#2b4f8c"></button></div></div>
-        </div>
-        <div class="og" data-og="glass" hidden>
-          <div class="orow"><span>Vidrios</span><div class="stepper" data-step="cpanes"><button type="button" data-d="-1" aria-label="Menos vidrios">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más vidrios">+</button></div></div>
-          <div class="orow"><span>Puertas de vidrio</span><div class="stepper" data-step="cdoors"><button type="button" data-d="-1" aria-label="Menos puertas">−</button><output class="num">2</output><button type="button" data-d="1" aria-label="Más puertas">+</button></div></div>
-          <div class="orow"><span>Calcomanías de vinil <b class="amt">+$10 cada una</b></span><div class="stepper" data-step="cstk"><button type="button" data-d="-1" aria-label="Menos calcomanías">−</button><output class="num">0</output><button type="button" data-d="1" aria-label="Más calcomanías">+</button></div></div>
-          <div class="orow"><span>Divisiones y espejos <b class="amt">+$50</b></span><button type="button" class="switch" data-sw="cin" role="switch" aria-checked="false" aria-label="Agregar divisiones y espejos interiores"></button></div>
-          <p class="onote">Toca Armar mi local en la imagen para colocar los vidrios y las puertas tú mismo.</p>
-        </div>
-        <div class="og" data-og="plan" hidden>
-          <div class="orow col"><span>Frecuencia</span><div class="seg2 wrapok" data-seg="csched"><button type="button" data-v="0" aria-pressed="true">Una vez $149</button><button type="button" data-v="1" aria-pressed="false">Mensual 15% menos</button><button type="button" data-v="2" aria-pressed="false">Cada 2 semanas 25% menos</button><button type="button" data-v="3" aria-pressed="false">Contrato trimestral 20% menos</button><button type="button" data-v="4" aria-pressed="false">Contrato anual 40% menos</button></div></div>
-          <p class="onote">Los contratos fijan el precio. Aplica el mejor descuento, nunca los dos, y el precio de abajo se actualiza conforme cambias.</p>
-        </div>
-      </div>
-      <div class="cgrp" data-cg="1" hidden>
-        <div class="orow"><span>Tamaño, miles de pies²</span><div class="stepper" data-step="bsq"><button type="button" data-d="-1" aria-label="Edificio más chico">−</button><output class="num">12</output><button type="button" data-d="1" aria-label="Edificio más grande">+</button></div></div>
-        <div class="orow"><span>Pisos</span><div class="stepper" data-step="bst"><button type="button" data-d="-1" aria-label="Menos pisos">−</button><output class="num">2</output><button type="button" data-d="1" aria-label="Más pisos">+</button></div></div>
-        <div class="orow"><span>Vidrios</span><div class="stepper" data-step="bwin"><button type="button" data-d="-4" aria-label="Menos ventanas">−</button><output class="num">48</output><button type="button" data-d="4" aria-label="Más ventanas">+</button></div></div>
-      </div>
-      <button type="button" class="replay" data-hact="replay">▶ Verlo otra vez</button>
-    </div>
-    <div class="ops" data-for="pig" hidden>
-      <div class="orow col"><span>La historia</span><div class="seg2 wrapok" data-hseg="stage"><button type="button" data-v="0" aria-pressed="false">Hoy</button><button type="button" data-v="1" aria-pressed="false">Limpieza + malla</button><button type="button" data-v="2" aria-pressed="true">+ Espantapájaros gratis</button><button type="button" data-v="3" aria-pressed="false">Lo que cubre 1</button><button type="button" data-v="4" aria-pressed="false">El vecino</button></div></div>
-      <div class="orow"><span>Espantapájaros <button type="button" class="one" data-hact="try1">Prueba con 1</button></span><div class="stepper" data-hstep="spin"><button type="button" data-d="-1" aria-label="Menos espantapájaros">−</button><output class="num">3</output><button type="button" data-d="1" aria-label="Más espantapájaros">+</button></div></div>
-      <div class="orow"><span>Mostrar lo que cubre cada uno</span><button type="button" class="switch" data-hsw="cov" role="switch" aria-checked="true" aria-label="Mostrar la cobertura de los espantapájaros"></button></div>
-      <div class="orow"><span>Tus paneles</span><div class="stepper" data-step="panels"><button type="button" data-d="-1" aria-label="Menos paneles">−</button><output class="num">16</output><button type="button" data-d="1" aria-label="Más paneles">+</button></div><b class="ptotal num" hidden></b></div>
-      <div class="orow"><span>Secciones</span><div class="seg2" data-seg="arrays"><button type="button" data-v="1" aria-pressed="true">1</button><button type="button" data-v="2" aria-pressed="false">2</button><button type="button" data-v="3" aria-pressed="false">3</button></div></div>
-      <div class="orow" data-sec="0" hidden><span>Sección 1</span><div class="stepper" data-step="arr0"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 1">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 1">+</button></div></div>
-      <div class="orow" data-sec="1" hidden><span>Sección 2</span><div class="stepper" data-step="arr1"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 2">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 2">+</button></div></div>
-      <div class="orow" data-sec="2" hidden><span>Sección 3</span><div class="stepper" data-step="arr2"><button type="button" data-d="-1" aria-label="Menos paneles en la sección 3">−</button><output class="num">8</output><button type="button" data-d="1" aria-label="Más paneles en la sección 3">+</button></div></div>
-    </div>
-    </template>
-    <div class="osum" id="osum"></div>
-    <a class="qb qb-gold ov-cta" href="#quote" id="ovCta">Elige tu servicio</a>
-  </div>
-</div>
-<nav class="dock" aria-label="Acciones rápidas">
-  <a class="qb p" href="#quote"><span class="lbl">Elige servicio</span><small><b id="dockTotal" class="num">$149</b> mi precio</small></a>
-  <a class="qb qb-gold" href="#tq-send">Texto</a>
-  <a class="qb qb-ghost" href="tel:7145590300">Llamar</a>
-</nav>
-</div>
-<script>window.TQ={"svc":["win"],"mode":"win","lang":"es","tech":"9b123a2d04"};</script>
-<script src="assets/quote/quote.js?v=d5f56d597c" defer></script>
-<!-- /tq:tail -->
+<script src="assets/request.js?v=20261110" defer></script>
 </body>
 </html>

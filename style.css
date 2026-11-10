@@ -682,15 +682,6 @@ a.area-chip:focus-visible{
 .footer-col a:hover{color:var(--brand-600)}
 .footer-bottom{border-top-color:var(--sky-200);color:var(--ink-soft)}
 
-/* Page to page: the browser cross fades the whole page and keeps the nav still. Native, no script, no weight. */
-@view-transition{navigation:auto}
-.nav{view-transition-name:site-nav}
-::view-transition-old(root){animation:tqOut .18s ease-in both}
-::view-transition-new(root){animation:tqIn .28s ease-out both}
-@keyframes tqOut{to{opacity:0;transform:translateY(-6px)}}
-@keyframes tqIn{from{opacity:0;transform:translateY(8px)}}
-@media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}
-
 /* Tony on the job, about page */
 .about-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 1.6rem}
 .about-photos figure{margin:0}

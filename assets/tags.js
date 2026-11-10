@@ -80,13 +80,6 @@
     conv(ADS_LABEL_PHONE);
   });
 
-  document.addEventListener('submit', function (e) {
-    var f = e.target;
-    if (!f || !f.classList || !f.classList.contains('quote-form')) return;
-    if (GA4_ID) window.gtag('event', 'generate_lead', { form_page: location.pathname });
-    conv(ADS_LABEL_FORM);
-  });
+  // Service-request receipt events are emitted by request.js only after a backend acknowledgement.
 
-  // The quick quote tool sends its own GA4 event; this only adds the Ads conversion.
-  document.addEventListener('tq:lead', function () { conv(ADS_LABEL_FORM); });
 })();
