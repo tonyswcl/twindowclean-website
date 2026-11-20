@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://twindowclean.com'
 BLOG = ROOT / 'blog'
 # Claims the site may not make until Tony confirms the product and terms (see the private repo _seo/system/d-writing-standard.md).
-BANNED = [r'\b\d+\s?% (?:of )?(?:solar )?(?:heat|glare|UV)', r'warranty (?:stays|remains) intact', r'pet-proof\b(?!.*not)',
+BANNED = [r'\b\d+\s?% (?:of )?(?:solar )?(?:heat|glare|UV)', r'warranty (?:stays|remains) intact', r'(?<!not )\bpet-proof\b',
           r'—', r'–']
 
 
