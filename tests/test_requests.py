@@ -13,7 +13,10 @@ class StaticInventory(unittest.TestCase):
   import xml.etree.ElementTree as ET
   from collections import Counter
   urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-  self.assertEqual(len(urls),93)
+  self.assertEqual(len(urls),92)
+  retired='sliding-door-screen-repair.html'
+  self.assertNotIn('https://twindowclean.com/'+retired,urls)
+  self.assertIn('noindex',html.fromstring((ROOT/retired).read_text()).xpath('string(//meta[@name="robots"]/@content)'))
   for url in urls:
    path=urlparse(url).path.lstrip('/') or 'index.html';s=(ROOT/path).read_text();d=html.fromstring(s)
    self.assertEqual(d.xpath('string(//link[@rel="canonical"]/@href)'),url,path)
