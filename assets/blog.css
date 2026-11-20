@@ -1,0 +1,25 @@
+/* Homeowner guides (/blog/). Uses the site's tokens from style.css. */
+.blog-article,.blog-index{padding:7.5rem 0 4rem;color:var(--ink);line-height:1.7;font-size:1.06rem}
+.blog-crumbs{font-size:.86rem;color:var(--ink-soft);margin-bottom:1rem}
+.blog-crumbs a{color:var(--brand-600);text-decoration:none}
+.blog-article h1,.blog-index h1{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:800;color:var(--navy-800);margin-bottom:.6rem}
+.blog-meta,.blog-lede{color:var(--ink-soft);margin-bottom:2rem}
+.blog-article h2{font-size:clamp(1.35rem,3.2vw,1.7rem);color:var(--navy-800);margin:2.4rem 0 .8rem}
+.blog-article h3{font-size:1.2rem;color:var(--navy-800);margin:1.8rem 0 .6rem}
+.blog-article p,.blog-article ul,.blog-article ol{margin-bottom:1.1rem}
+.blog-article ul,.blog-article ol{padding-left:1.3rem}
+.blog-article li{margin-bottom:.5rem}
+.blog-article a{color:var(--brand-600);text-decoration:underline;text-underline-offset:3px}
+.blog-figure{margin:2rem auto;max-width:440px}
+.blog-figure img{width:100%;height:auto;border-radius:14px;display:block}
+.blog-figure figcaption{font-size:.88rem;color:var(--ink-soft);margin-top:.5rem;text-align:center}
+.blog-table{overflow-x:auto;margin:1.4rem 0}
+.blog-table table{border-collapse:collapse;width:100%;font-size:.96rem}
+.blog-table th,.blog-table td{border:1px solid var(--sky-200);padding:.6rem .75rem;text-align:left;vertical-align:top}
+.blog-table th{background:var(--sky-50);color:var(--navy-800)}
+.blog-list{list-style:none;padding:0;display:grid;gap:1rem}
+.blog-list a{display:block;padding:1.3rem 1.4rem;border:1px solid var(--sky-200);border-radius:16px;text-decoration:none;color:var(--ink);background:var(--white)}
+.blog-list a:hover{border-color:var(--brand-400)}
+.blog-list h2{font-size:1.25rem;color:var(--navy-800);margin-bottom:.4rem}
+.blog-list p{color:var(--ink-soft);margin-bottom:.5rem}
+.blog-list span{font-size:.85rem;color:var(--ink-soft)}
