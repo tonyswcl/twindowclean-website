@@ -14,7 +14,9 @@ BLOG = ROOT / 'blog'
 # Claims the site may not make (owner decisions; see the private repo _seo/system/d-writing-standard.md).
 BANNED = [r'\b\d+\s?% (?:of )?(?:solar )?(?:heat|glare|UV)', r'warranty (?:stays|remains|is) (?:intact|safe|untouched)',
           r'keeps? your warranty', r'voids? most', r'whatever the size of the house', r'for most High Desert roofs',
-          r'(?<!not )\bpet-proof\b', r'—', r'–']
+          r'(?<!not )\bpet-proof\b', r'—', r'–', r'more pigeon calls than anywhere', r'arrays are usually a full day']
+# The only outside links a guide may carry: government and Cornell Lab sources it cites. Never other businesses.
+SOURCES = {'www.fws.gov', 'www.federalregister.gov', 'www.ecfr.gov', 'www.allaboutbirds.org'}
 
 
 def local(url):
@@ -54,6 +56,9 @@ class Blog(unittest.TestCase):
                 self.assertTrue(img.get('width') and img.get('height'), (name, img.get('src')))
             for ref in doc.xpath('//main//a/@href'):
                 target = urlparse(urljoin(BASE + name, ref))
+                if target.netloc in SOURCES:
+                    self.assertEqual(target.scheme, 'https', (name, ref))
+                    continue
                 self.assertEqual(target.netloc, 'twindowclean.com', (name, ref, 'no links to other businesses'))
                 self.assertTrue((ROOT / (target.path.lstrip('/') or 'index.html')).is_file(), (name, ref))
             text = ' '.join(doc.xpath('//main//text()'))
