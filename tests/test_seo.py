@@ -15,6 +15,7 @@ from lxml import etree, html
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://twindowclean.com'
 BASE_REF = os.environ.get('TWC_SEO_BASE_REF', '3ae392605bd4a336ab5930cce071e8f167a5e9bc')
+NEW_SECTION = '/blog/'  # homeowner guides, added after the baseline; checked in test_blog.py
 RETIRED = '/sliding-door-screen-repair.html'
 
 
@@ -81,7 +82,7 @@ class SeoRelease(unittest.TestCase):
     def test_only_unsupported_offer_retired(self):
         old = etree.fromstring(baseline('sitemap.xml')).xpath('//*[local-name()="loc"]/text()')
         self.assertEqual(set(old) - set(self.urls), {BASE + RETIRED})
-        self.assertEqual(set(self.urls) - set(old), set())
+        self.assertEqual({u for u in set(self.urls) - set(old) if NEW_SECTION not in u}, set())
         retired = document(RETIRED.lstrip('/'))
         self.assertEqual(retired.xpath('//meta[@name="robots"]/@content'), ['noindex,follow'])
         self.assertFalse(retired.xpath('//script[@type="application/ld+json"]'))
@@ -90,6 +91,8 @@ class SeoRelease(unittest.TestCase):
 
     def test_forms_scripts_and_intake_infrastructure_preserved(self):
         for path, doc in self.docs.items():
+            if path.startswith(NEW_SECTION):
+                continue
             old = html.fromstring(baseline(self.paths[path]))
             for xpath in ('//form[@id="service-request"]', '//script[not(@type="application/ld+json")]', '//section[@id="quote"]/@data-default-services'):
                 serialize = lambda d: [etree.tostring(x, method='html') if isinstance(x, etree._Element) else x for x in d.xpath(xpath)]
@@ -101,7 +104,7 @@ class SeoRelease(unittest.TestCase):
         for path, doc in self.docs.items():
             for source in doc.xpath('//script[@type="application/ld+json"]/text()'):
                 json.loads(source)
-            old = faqs(html.fromstring(baseline(self.paths[path])))
+            old = {} if path.startswith(NEW_SECTION) else faqs(html.fromstring(baseline(self.paths[path])))
             visible = normalized(' '.join(doc.xpath('//body//text()[not(ancestor::script or ancestor::style)]')))
             for question, answer in faqs(doc).items():
                 self.assertIn(normalized(question), visible, (path, question))
